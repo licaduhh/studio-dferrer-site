@@ -323,23 +323,23 @@ body.df-wa-lock{overflow:hidden}
  .dferrer-review-dots{margin-top:13px}
 }
 
-/* Carrossel real das alunas com certificados — curso presencial */
-.dferrer-student-carousel{position:relative;padding:17px 17px 34px!important}
-.dferrer-student-viewport{width:100%;overflow:hidden;border-radius:13px;background:#E4F2EF;touch-action:pan-y}
+/* Carrossel das alunas — fotos ocupam toda a área, sem margens internas */
+.dferrer-student-carousel{position:relative;padding:0 0 34px!important}
+.dferrer-student-viewport{width:100%;overflow:hidden;border-radius:14px;background:#E4F2EF;touch-action:pan-y}
 .dferrer-student-track{display:flex;transition:transform .4s ease;will-change:transform}
-.dferrer-course-slide{flex:0 0 100%;width:100%;aspect-ratio:16/10;display:grid;place-items:center;background:#EAF4F1}
-.dferrer-course-slide img{display:block;width:100%;height:100%;object-fit:contain}
-.dferrer-student-arrow{position:absolute;top:calc(50% - 17px);width:34px;height:34px;border:1px solid rgba(8,127,121,.2);border-radius:50%;background:rgba(255,255,255,.94);color:#087F79;font:300 26px/1 Arial,sans-serif;box-shadow:0 2px 9px rgba(7,95,91,.12);cursor:pointer}
-.dferrer-student-prev{left:5px}
-.dferrer-student-next{right:5px}
-.dferrer-student-count{position:absolute;right:27px;bottom:8px;padding:4px 9px;border-radius:20px;background:rgba(255,255,255,.88);color:#087F79;font-size:10px;letter-spacing:.06em}
+.dferrer-course-slide{flex:0 0 100%;width:100%;aspect-ratio:16/10;overflow:hidden;background:#EAF4F1}
+.dferrer-course-slide img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.dferrer-student-arrow{position:absolute;top:calc((100% - 34px)/2);width:34px;height:34px;border:1px solid rgba(8,127,121,.2);border-radius:50%;background:rgba(255,255,255,.94);color:#087F79;font:300 26px/1 Arial,sans-serif;box-shadow:0 2px 9px rgba(7,95,91,.12);cursor:pointer}
+.dferrer-student-prev{left:12px}
+.dferrer-student-next{right:12px}
+.dferrer-student-count{position:absolute;right:14px;bottom:8px;padding:4px 9px;border-radius:20px;background:rgba(255,255,255,.9);color:#087F79;font-size:10px;letter-spacing:.06em}
 @media(max-width:700px){
- .dferrer-student-carousel{padding:12px 12px 30px!important}
+ .dferrer-student-carousel{padding:0 0 30px!important}
  .dferrer-course-slide{aspect-ratio:4/3}
- .dferrer-student-arrow{width:30px;height:30px;font-size:23px}
- .dferrer-student-prev{left:3px}
- .dferrer-student-next{right:3px}
- .dferrer-student-count{right:19px;bottom:6px}
+ .dferrer-student-arrow{top:calc((100% - 30px)/2);width:30px;height:30px;font-size:23px}
+ .dferrer-student-prev{left:10px}
+ .dferrer-student-next{right:10px}
+ .dferrer-student-count{right:12px;bottom:6px}
 }
 @media(prefers-reduced-motion:reduce){.dferrer-student-track{transition:none}}
 
