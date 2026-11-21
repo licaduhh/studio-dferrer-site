@@ -289,7 +289,32 @@ body{background:linear-gradient(160deg,#f4fffc,#fffdfb 58%,#fbeaf0)!important}
 .link{border-radius:999px!important;border-color:#a9e0d9!important}
 .link.primary{background:linear-gradient(110deg,#24b9ae,#07877f)!important;border-color:#168f88!important}
 </style>
-<link rel="stylesheet" href="assets/dferrer-site.css"></head>
+<link rel="stylesheet" href="assets/dferrer-site.css">
+<style id="bio-reference-match">
+/* Página de entrada — reproduzir a referência aprovada */
+html,body{background:#FFF9F6!important;color:#42675F!important}
+body{background:#FFF9F6!important}
+main{width:min(calc(100% - 42px),460px)!important;margin:0 auto!important;padding:0 0 0!important;text-align:center!important}
+.avatar-placeholder{display:block!important;width:180px!important;height:180px!important;margin:0 auto 14px!important;border:1.5px solid #A9D4CC!important;border-radius:50%!important;overflow:hidden!important;background:#F4EDE8!important;box-shadow:none!important}
+.avatar-placeholder img{display:block!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center 30%!important;border-radius:50%!important}
+.bio-logo{display:block!important;width:min(64%,230px)!important;max-width:230px!important;height:auto!important;margin:0 auto 22px!important;object-fit:contain!important;mix-blend-mode:normal!important}
+.links{display:grid!important;gap:10px!important;margin:0!important;padding:0!important}
+.links .link{display:flex!important;width:100%!important;min-height:54px!important;height:54px!important;align-items:center!important;justify-content:center!important;padding:8px 16px!important;border:1.5px solid #9CCBC3!important;border-radius:999px!important;background:#FFFDFC!important;color:#42675F!important;font-family:'DM Sans',Arial,sans-serif!important;font-size:18px!important;font-weight:400!important;letter-spacing:0!important;text-transform:none!important;line-height:1.2!important;box-shadow:none!important}
+.links .link.primary{background:#D2EBE5!important;border-color:#A4D0C7!important;color:#315C54!important}
+.links .link:hover{background:#D2EBE5!important;color:#315C54!important;transform:none!important}
+.footer{position:relative!important;width:100vw!important;height:190px!important;min-height:190px!important;margin:64px 0 0 calc(50% - 50vw)!important;padding:0!important;overflow:hidden!important;line-height:0!important;border:0!important;background:#FFF9F6!important}
+.footer::after{content:""!important;position:absolute!important;display:block!important;left:0!important;right:0!important;bottom:0!important;width:100%!important;height:150px!important;background-image:url("./assets/footer-flores-dferrer-transparente.png")!important;background-repeat:no-repeat!important;background-position:center bottom!important;background-size:100% auto!important;pointer-events:none!important}
+@media(max-width:700px){
+ main{padding-top:0!important}
+ .avatar-placeholder{width:180px!important;height:180px!important;margin-bottom:14px!important}
+ .bio-logo{width:min(64%,230px)!important;margin-bottom:22px!important}
+ .links{gap:10px!important}
+ .links .link{height:54px!important;min-height:54px!important;font-size:18px!important}
+ .footer{height:190px!important;min-height:190px!important;margin-top:64px!important;padding:0!important}
+ .footer::after{height:150px!important;background-size:100% auto!important}
+}
+@media(max-width:380px){.links .link{font-size:17px!important}}
+</style></head>
 <body><main>
 <div class="avatar-placeholder"><img src="./assets/4F961B9D-B741-4547-84F9-EF9C93CEACAF.png" alt="Foto de Angélica Ferreira"></div>
 <img class="bio-logo" src="./assets/dferrer-beauty-logo-transparente.png" alt="D’Ferrer Beauty">
