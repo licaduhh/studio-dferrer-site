@@ -370,3 +370,14 @@ body.df-wa-lock{overflow:hidden}
 .brow-lamination-dot{width:7px;height:7px;padding:0;border:1px solid white;border-radius:50%;background:rgba(255,255,255,.5);cursor:pointer}
 .brow-lamination-dot.active{background:#32C7BE;border-color:#32C7BE;transform:scale(1.2)}
 @media(prefers-reduced-motion:reduce){.brow-lamination-track{transition:none}}
+
+/* Carrossel de fotos da técnica Fio a Fio */
+.fio-a-fio-carousel{position:relative;height:245px;overflow:hidden;background:#EDF7F4}
+.fio-a-fio-viewport{width:100%;height:100%;overflow:hidden;touch-action:pan-y}
+.fio-a-fio-track{display:flex;width:100%;height:100%;transition:transform .38s ease}
+.fio-a-fio-slide{flex:0 0 100%;width:100%;height:100%}
+.fio-a-fio-slide img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.fio-a-fio-arrow{position:absolute;top:50%;transform:translateY(-50%);width:30px;height:30px;padding:0;border:1px solid rgba(255,255,255,.8);border-radius:50%;background:rgba(255,255,255,.9);color:#087F79;font:300 24px/1 Arial,sans-serif;box-shadow:0 2px 8px rgba(0,0,0,.12);cursor:pointer}
+.fio-a-fio-prev{left:9px}
+.fio-a-fio-next{right:9px}
+.fio-a-fio-count{position:absolute;right:10px;bottom:9px;padding:4px 9px;border-radius:20px;background:rgba(255,255,255,.9);color:#087F79;font-size:10px;letter-spacing:.05em}
