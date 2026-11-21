@@ -402,3 +402,13 @@ body.df-wa-lock{overflow:hidden}
 .design-simples-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:30px;height:30px;border:0;border-radius:50%;background:rgba(255,255,255,.88);color:#267f79;font-size:23px;line-height:1;cursor:pointer}
 .design-simples-prev{left:9px}.design-simples-next{right:9px}
 .design-simples-count{position:absolute;right:10px;bottom:9px;z-index:2;padding:3px 8px;border-radius:20px;background:rgba(0,0,0,.48);color:#fff;font-size:10px}
+
+/* Carrossel — Hydra Gloss */
+.hydra-gloss-carousel{position:relative;overflow:hidden;background:#f7f7f7}
+.hydra-gloss-track,.hydra-gloss-slide{width:100%;height:100%}
+.hydra-gloss-slide{display:none;position:absolute;inset:0}
+.hydra-gloss-slide.active{display:block}
+.hydra-gloss-slide img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.hydra-gloss-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:30px;height:30px;border:0;border-radius:50%;background:rgba(255,255,255,.88);color:#267f79;font-size:23px;line-height:1;cursor:pointer}
+.hydra-gloss-prev{left:9px}.hydra-gloss-next{right:9px}
+.hydra-gloss-count{position:absolute;right:10px;bottom:9px;z-index:2;padding:3px 8px;border-radius:20px;background:rgba(0,0,0,.48);color:#fff;font-size:10px}
