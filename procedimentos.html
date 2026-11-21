@@ -51,6 +51,26 @@ p,li,a,button,input,textarea,select,label,small,
   font-family:var(--font-body)!important;
 }
 
+
+/* CORREÇÃO TIPOGRÁFICA GLOBAL — Bodoni Moda SEM itálico nos títulos */
+:root{--font-display:'Bodoni Moda',Georgia,serif;--font-body:'DM Sans',Arial,sans-serif}
+html,body,body *{font-family:var(--font-body)!important}
+h1,h2,h3,h4,h5,h6,
+.hero h1,.hero h1 em,.section-title,.section-label,
+.about-text h3,.founder-copy h3,.service-card h3,.body h2,
+.brand,.wordmark,.footer-brand,.avatar span,.signature,
+.photo-caption,.founder-highlight strong,.display-title{
+  font-family:var(--font-display)!important;
+  font-style:normal!important;
+  font-weight:400!important;
+}
+p,li,a,button,input,textarea,select,label,small,
+.navlinks,.eyebrow,.section-kicker,.tagline,.footer-note,
+.footer-links,.btn,.link,.book,.back,.tabs a,.stat span,
+.hero-copy,.body p{
+  font-family:var(--font-body)!important;
+}
+
 </style>
 </head>
 <body>
