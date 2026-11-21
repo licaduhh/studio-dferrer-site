@@ -432,3 +432,10 @@ body.df-wa-lock{overflow:hidden}
 .express-brasileiro-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:30px;height:30px;border:0;border-radius:50%;background:rgba(255,255,255,.88);color:#267f79;font-size:23px;line-height:1;cursor:pointer}
 .express-brasileiro-prev{left:9px}.express-brasileiro-next{right:9px}
 .express-brasileiro-count{position:absolute;right:10px;bottom:9px;z-index:2;padding:3px 8px;border-radius:20px;background:rgba(0,0,0,.48);color:#fff;font-size:10px}
+
+/* Ajuste de enquadramento das fotos dos procedimentos — mobile */
+@media(max-width:620px){
+ .procedure-photo{height:auto!important;aspect-ratio:1/1!important;background:#f5faf8!important;}
+ .procedure-photo>img,.procedure-photo .brow-lamination-slide img,.procedure-photo .lash-lifting-slide img,.procedure-photo .fio-a-fio-slide img,.procedure-photo .volume-brasileiro-slide img,.procedure-photo .design-simples-slide img,.procedure-photo .hydra-gloss-slide img,.procedure-photo .volume-shine-slide img,.procedure-photo .express-brasileiro-slide img{width:100%!important;height:100%!important;object-fit:contain!important;object-position:center center!important;}
+ .procedure-photo .brow-lamination-viewport,.procedure-photo .brow-lamination-track,.procedure-photo .brow-lamination-slide,.procedure-photo .design-simples-track,.procedure-photo .design-simples-slide{height:100%!important;}
+}
