@@ -184,6 +184,21 @@ header{background:rgba(255,249,246,.96)!important;border-color:#B8E6E1!important
 
 .photo-placeholder{height:290px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:linear-gradient(140deg,#B8E6E1 0%,#FFF9F6 48%,#FFD6E5 100%);color:#075F5B;border:1px solid #B8E6E1}.placeholder-mark{font:400 42px "Bodoni Moda",serif;letter-spacing:-.06em}.placeholder-name{font:500 10px "Montserrat",sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#087F79}.photo-placeholder{padding:8px!important}
 @media(max-width:680px){.photo-placeholder{height:250px}}
+
+.catalog-overview{padding:58px 0 30px;background:#FFF9F6}
+.overview-heading{text-align:center;max-width:800px;margin:0 auto 46px}
+.overview-heading h2{font:400 clamp(42px,7vw,76px)/1.08 'Bodoni Moda',Georgia,serif;color:#075F5B;letter-spacing:-.045em;margin:20px 0}
+.overview-heading p{max-width:760px;margin:0 auto;color:#8A817A;font-size:17px;line-height:1.9}
+.overview-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid #B8E6E1;border-left:1px solid #B8E6E1;background:#fff}
+.overview-card{padding:44px 42px;border-right:1px solid #B8E6E1;border-bottom:1px solid #B8E6E1;min-height:300px}
+.overview-number{display:block;color:#087F79;font:italic 500 25px/1.4 'DM Sans',sans-serif;margin-bottom:24px}
+.overview-card h3{font:400 clamp(28px,3vw,39px)/1.15 'Bodoni Moda',Georgia,serif;color:#075F5B;margin:0 0 22px}
+.overview-card p{font:400 16px/1.9 'DM Sans',sans-serif;color:#8A817A;margin:0 0 25px}
+.tech-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.tech-tags span{display:inline-flex;align-items:center;border:1px solid #B8E6E1;border-radius:999px;padding:9px 15px;background:#FFF9F6;color:#087F79;font:400 13px 'DM Sans',sans-serif}
+.overview-link{display:inline-flex;gap:9px;align-items:center;color:#087F79;border-bottom:1px solid #B8E6E1;padding-bottom:6px;font:500 13px 'DM Sans',sans-serif}
+@media(max-width:680px){.catalog-overview{padding:44px 0 20px}.overview-heading{margin-bottom:32px}.overview-heading h2{font-size:43px}.overview-heading p{font-size:15px;line-height:1.8}.overview-grid{grid-template-columns:1fr}.overview-card{padding:32px 26px;min-height:0}.overview-number{font-size:22px;margin-bottom:18px}.overview-card h3{font-size:32px}.overview-card p{font-size:15px}.tech-tags{gap:8px}.tech-tags span{font-size:12px;padding:8px 12px}}
+
 </style>
 </head>
 <body>
@@ -191,6 +206,45 @@ header{background:rgba(255,249,246,.96)!important;border-color:#B8E6E1!important
 <main>
 <section class="hero"><div class="wrap"><div class="eyebrow">D’Ferrer Beauty · Osasco</div><h1>Procedimentos <em>exclusivos</em></h1><p>Cada detalhe é pensado para valorizar sua beleza natural. Conheça nossos cuidados e escolha o momento que combina com você.</p>
 <nav class="tabs" aria-label="Categorias"><a href="#cilios">Cílios</a><a href="#lash-lifting">Lash Lifting</a><a href="#sobrancelhas">Sobrancelhas</a><a href="#tratamentos">Tratamentos</a></nav></div></section>
+
+<section class="catalog-overview">
+  <div class="wrap">
+    <div class="overview-heading">
+      <span class="eyebrow">NOSSO MENU DE BELEZA</span>
+      <h2>Encontre seu próximo<br>momento D’Ferrer.</h2>
+      <p>Técnicas autorais, efeitos personalizados e cuidados pensados para realçar sua beleza com delicadeza.</p>
+    </div>
+    <div class="overview-grid">
+      <article class="overview-card">
+        <span class="overview-number">01 · OLHAR</span>
+        <h3>Extensão de cílios</h3>
+        <p>Do efeito natural ao volume marcante, escolha o estilo que combina com você. Nossa equipe ajuda a encontrar o desenho ideal para o seu olhar.</p>
+        <div class="tech-tags">
+          <span>Efeito Rímel</span><span>Molhado</span><span>Angel Eyes</span><span>Express Brasileiro</span><span>Express 4D</span><span>Sirena</span><span>Volume Brasileiro</span><span>Egípcio</span><span>Safira</span><span>Fox</span><span>Spikes</span><span>Shine</span><span>Super Fio a Fio</span><span>Fox Tiffany</span><span>Hiper Brasileiro</span><span>Volume Turquesa</span><span>Maldivas</span>
+        </div>
+      </article>
+      <article class="overview-card">
+        <span class="overview-number">02 · FIOS NATURAIS</span>
+        <h3>Lash Lifting</h3>
+        <p>Realce os seus próprios cílios com curvatura e aparência alongada, valorizando a beleza natural do olhar.</p>
+        <a class="overview-link" href="#lash-lifting">Conhecer procedimento <span>↗</span></a>
+      </article>
+      <article class="overview-card">
+        <span class="overview-number">03 · HARMONIA</span>
+        <h3>Sobrancelhas</h3>
+        <p>Design personalizado para valorizar o formato do rosto, com opções de henna e tintura.</p>
+        <div class="tech-tags"><span>Design</span><span>Design com henna</span><span>Design com tintura</span><span>Brow Lamination</span><span>Fort Brow</span></div>
+      </article>
+      <article class="overview-card">
+        <span class="overview-number">04 · CUIDADO</span>
+        <h3>Tratamentos</h3>
+        <p>Cuidados especiais que complementam sua experiência de beleza.</p>
+        <div class="tech-tags"><span>Hydra Gloss</span><span>Fort Brow</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <section class="catalog"><div class="wrap">
 <h2 class="section-label" id="cilios">Olhar · Extensão de cílios</h2><div class="cards"><article class="card reveal"><div class="photo photo-placeholder" role="img" aria-label="Foto de Efeito Rímel será adicionada"><span class="placeholder-mark">D’F</span><span class="placeholder-name">Foto em breve</span></div><div class="body"><span class="num">01 · CÍLIOS</span><h2>Efeito Rímel</h2><p>Um acabamento inspirado no destaque da máscara de cílios, para realçar o olhar.</p><a class="book" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener">Agendar on-line <span>↗</span></a></div></article>
 <article class="card reveal"><div class="photo photo-placeholder" role="img" aria-label="Foto de Efeito Molhado será adicionada"><span class="placeholder-mark">D’F</span><span class="placeholder-name">Foto em breve</span></div><div class="body"><span class="num">02 · CÍLIOS</span><h2>Efeito Molhado</h2><p>Um visual marcante com aparência de fios úmidos e bem definidos.</p><a class="book" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener">Agendar on-line <span>↗</span></a></div></article>
