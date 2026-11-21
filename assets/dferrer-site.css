@@ -459,3 +459,15 @@ body.df-wa-lock{overflow:hidden}
 .volume-turquesa-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:30px;height:30px;border:0;border-radius:50%;background:rgba(255,255,255,.88);color:#267f79;font-size:23px;line-height:1;cursor:pointer}
 .volume-turquesa-prev{left:9px}.volume-turquesa-next{right:9px}
 .volume-turquesa-count{position:absolute;right:10px;bottom:9px;z-index:2;padding:3px 8px;border-radius:20px;background:rgba(0,0,0,.48);color:#fff;font-size:10px}
+
+
+/* Aumenta o destaque do card de formação presencial no celular */
+@media(max-width:700px){
+ .dferrer-courses{padding-left:8px!important;padding-right:8px!important}
+ .dferrer-courses-inner{width:100%!important}
+ .dferrer-course-presential{width:100%!important;max-width:none!important;border-radius:20px!important}
+ .dferrer-course-presential .dferrer-course-gallery{padding:8px 8px 0!important}
+ .dferrer-course-presential .dferrer-student-carousel{padding-bottom:34px!important}
+ .dferrer-course-presential .dferrer-course-slide{aspect-ratio:1/1!important}
+ .dferrer-course-presential .dferrer-course-content{padding:25px 22px 27px!important}
+}
