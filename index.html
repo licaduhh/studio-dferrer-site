@@ -419,18 +419,18 @@ a:hover{color:#087F79}
       <a href="#inicio">Início</a><a href="#studio">O Studio</a><a href="#servicos">Procedimentos</a><a href="#resultados">Resultados</a><a href="#depoimentos">Depoimentos</a><a href="#contato">Contato</a>
     </nav>
     <a class="btn nav-cta" href="#contato">Agendar horário</a>
-    <a class="btn nav-online" href="https://dferrer.appfidelizze.com" target="_blank" rel="noopener noreferrer">Agendar on-line ↗</a>
+    <a class="btn nav-online" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener noreferrer">Agendar on-line ↗</a>
   </div>
 </header>
 <main>
   <section class="hero" id="inicio"><div class="container hero-grid">
-    <div><div class="eyebrow">Studio D’Ferrer · Osasco · Desde 2020</div><h1>Seu olhar merece <em>esse cuidado.</em></h1><p class="hero-copy">Há 6 anos realçando a beleza e a autoestima de nossas clientes, com delicadeza, técnica e um atendimento pensado especialmente para você.</p><div class="hero-actions"><a class="btn" href="#contato">Agendar meu horário <span>↗</span></a><a class="btn btn-outline" href="#servicos">Ver procedimentos</a><a class="btn btn-online" href="https://dferrer.appfidelizze.com" target="_blank" rel="noopener noreferrer">Agendar on-line ↗</a></div><div class="hero-note">Beleza em cada detalhe</div></div>
-    <div class="hero-visual"><div class="hero-photo"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1100&q=85" alt="Momento de cuidado e beleza" /></div><div class="photo-caption">Sua beleza, em sua melhor versão.</div><div class="butterfly" aria-hidden="true">✧</div></div>
+    <div><div class="eyebrow">Studio D’Ferrer · Osasco · Desde 2020</div><h1>Seu olhar merece <em>esse cuidado.</em></h1><p class="hero-copy">Há 6 anos realçando a beleza e a autoestima de nossas clientes, com delicadeza, técnica e um atendimento pensado especialmente para você.</p><div class="hero-actions"><a class="btn" href="#contato">Agendar meu horário <span>↗</span></a><a class="btn btn-outline" href="#servicos">Ver procedimentos</a><a class="btn btn-online" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener noreferrer">Agendar on-line ↗</a></div><div class="hero-note">Beleza em cada detalhe</div></div>
+    <div class="hero-visual"><div class="hero-photo"><img src="./assets/4F961B9D-B741-4547-84F9-EF9C93CEACAF.png" alt="Angélica Ferreira, fundadora do Studio D’Ferrer" /></div><div class="photo-caption">Sua beleza, em sua melhor versão.</div><div class="butterfly" aria-hidden="true">✧</div></div>
   </div></section>
   <section class="stats" aria-label="Números do Studio D’Ferrer"><div class="container stats-grid">
-    <div class="stat"><strong>9.000+</strong><span>Clientes atendidas</span></div>
-    <div class="stat"><strong>25+</strong><span>Técnicas exclusivas e autorais</span></div>
-    <div class="stat"><strong>6+</strong><span>Anos de experiência</span></div>
+    <div class="stat"><strong>9.000+</strong><span>clientes atendidas</span></div>
+    <div class="stat"><strong>25+</strong><span>técnica exclusivas e autorais</span></div>
+    <div class="stat"><strong>6+</strong><span>de experiência</span></div>
   </div></section>
   <section class="intro founder-story" id="studio">
     <div class="container">
@@ -528,7 +528,6 @@ a:hover{color:#087F79}
   toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'×':'☰'});
   nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰'}));
   const waModal=document.getElementById('whatsappModal');
-  document.getElementById('openOnlineBooking').addEventListener('click',()=>waModal.showModal());
   document.getElementById('openWhatsapp').addEventListener('click',()=>waModal.showModal());
   waModal.querySelector('.wa-close').addEventListener('click',()=>waModal.close());
   waModal.addEventListener('click',e=>{if(e.target===waModal)waModal.close()});
