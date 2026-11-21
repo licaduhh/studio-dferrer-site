@@ -191,3 +191,12 @@ footer p{color:rgba(255,255,255,.88)!important}
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
 }
+/* Shared navigation for secondary pages */
+.site-links{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.site-links a{font:500 10px "DM Sans",sans-serif;color:#566A66}
+.site-links a:hover{color:var(--df-deep)}
+.procedures-header{height:auto!important;min-height:74px;padding:10px 0}
+.procedures-header .nav{gap:18px}
+.procedures-header .back{white-space:nowrap}
+.procedures-hero h1 em{display:inline!important;font-size:inherit!important;line-height:inherit!important;margin:0!important;font-family:"Boston Angel",sans-serif!important}
+@media(max-width:700px){.site-links{gap:10px}.site-links a{font-size:9px}.procedures-header .nav{flex-wrap:wrap;padding:8px 0}.procedures-header .back{font-size:9px}}
