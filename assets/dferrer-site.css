@@ -67,3 +67,31 @@ footer>* ,.footer>* ,.procedures-footer>*{position:relative;z-index:1}
   background-size:100% auto;
  }
 }
+
+
+/* História da fundadora — seção editorial após os procedimentos */
+.founder-story{position:relative;isolation:isolate;overflow:hidden;background:#FFF9F6;padding:76px 24px 30px;color:#315E59;border-top:1px solid #D8ECE8}
+.founder-story-inner{width:min(1080px,100%);margin:0 auto;display:grid;grid-template-columns:minmax(230px,.78fr) minmax(0,1.22fr);gap:clamp(32px,6vw,82px);align-items:center}
+.founder-story-mark{min-height:440px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;background:linear-gradient(145deg,#E6F4F1 0%,#F7F4F0 60%,#FCEAF0 100%);border:1px solid #CBE6E1;border-radius:180px 180px 4px 4px}
+.founder-story-mark:before,.founder-story-mark:after{content:"";position:absolute;border:1px solid rgba(50,145,136,.24);border-radius:50%;width:76%;aspect-ratio:1}
+.founder-story-mark:after{width:58%;border-color:rgba(50,145,136,.18)}
+.founder-story-mark span{position:relative;z-index:1;color:#075F5B;font:400 clamp(58px,8vw,92px)/1 "Boston Angel",Georgia,serif;letter-spacing:-.06em}
+.founder-story-mark i{position:absolute;bottom:26px;width:44px;height:1px;background:#32C7BE}
+.founder-story-copy .eyebrow{display:block;color:#318E86;font-size:10px;letter-spacing:.19em;text-transform:uppercase;font-weight:700;margin-bottom:13px}
+.founder-story-copy h2{margin:0 0 19px;color:#075F5B;font:400 clamp(36px,4.2vw,52px)/1.08 "Boston Angel",Georgia,serif}
+.founder-story-copy p{font-size:13px;line-height:1.9;color:#657873;margin:0 0 13px}
+.founder-story-copy .founder-story-lead{font-size:16px;line-height:1.7;color:#315E59;margin-bottom:18px}
+.founder-story-signature{padding-top:12px!important;color:#315E59!important}
+.founder-story-signature strong{display:block;margin-top:8px;color:#075F5B;font:400 29px/1.2 "Boston Angel",Georgia,serif}
+.founder-story-signature span{display:block;margin-top:3px;color:#82928D;font-size:9px;letter-spacing:.12em;text-transform:uppercase}
+.founder-story-note{width:min(1080px,100%);margin:42px auto 0;padding:17px 0 0;border-top:1px solid #D8ECE8;display:flex;justify-content:center;gap:clamp(18px,5vw,60px);color:#66817C;font-size:9px;letter-spacing:.15em;text-transform:uppercase}
+@media(max-width:760px){
+ .founder-story{padding:52px 20px 24px}
+ .founder-story-inner{grid-template-columns:1fr;gap:28px;max-width:540px}
+ .founder-story-mark{min-height:210px;max-height:230px;border-radius:130px 130px 4px 4px}
+ .founder-story-mark span{font-size:65px}
+ .founder-story-copy h2{font-size:39px}
+ .founder-story-copy .founder-story-lead{font-size:15px}
+ .founder-story-copy p{font-size:12px;line-height:1.85}
+ .founder-story-note{margin-top:28px;gap:13px;flex-wrap:wrap;font-size:8px}
+}
