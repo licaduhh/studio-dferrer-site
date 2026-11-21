@@ -68,8 +68,30 @@
   </div>
   <div class="dferrer-course-grid">
    <article class="dferrer-course-card dferrer-course-presential">
-    <div class="dferrer-course-gallery" aria-label="Espaço reservado para o carrossel de fotos das alunas do curso presencial">
-     <div class="dferrer-course-gallery-placeholder"><span class="gallery-mark">D’F</span><strong>Momentos das nossas formações</strong><small>Em breve, fotos reais das alunas nos cursos presenciais</small><span class="gallery-dots" aria-hidden="true">● ○ ○</span></div>
+    <div class="dferrer-course-gallery dferrer-student-carousel" aria-label="Carrossel de fotos das alunas do curso presencial">
+     <div class="dferrer-student-viewport">
+      <div class="dferrer-student-track">
+      <div class="dferrer-course-slide is-active" data-slide="0"><img src="assets/IMG_1163.jpeg" alt="Alunas do curso presencial Studio D’Ferrer Beauty com certificado" loading="eager"></div>
+      <div class="dferrer-course-slide" data-slide="1"><img src="assets/IMG_1164.jpeg" alt="Alunas do curso presencial Studio D’Ferrer Beauty com certificado" loading="lazy"></div>
+      <div class="dferrer-course-slide" data-slide="2"><img src="assets/IMG_1160.jpeg" alt="Alunas do curso presencial Studio D’Ferrer Beauty com certificado" loading="lazy"></div>
+      <div class="dferrer-course-slide" data-slide="3"><img src="assets/IMG_1153.jpeg" alt="Alunas do curso presencial Studio D’Ferrer Beauty com certificado" loading="lazy"></div>
+      <div class="dferrer-course-slide" data-slide="4"><img src="assets/IMG_1152.jpeg" alt="Alunas do curso presencial Studio D’Ferrer Beauty com certificado" loading="lazy"></div>
+      <div class="dferrer-course-slide" data-slide="5"><img src="assets/IMG_1155.jpeg" alt="Alunas do curso presencial Studio D’Ferrer Beauty com certificado" loading="lazy"></div>
+      <div class="dferrer-course-slide" data-slide="6"><img src="assets/IMG_1148.jpeg" alt="Alunas do curso presencial Studio D’Ferrer Beauty com certificado" loading="lazy"></div>
+      <div class="dferrer-course-slide" data-slide="7"><img src="assets/IMG_1157.jpeg" alt="Alunas do curso presencial Studio D’Ferrer Beauty com certificado" loading="lazy"></div>
+      <div class="dferrer-course-slide" data-slide="8"><img src="assets/IMG_1161.jpeg" alt="Alunas do curso presencial Studio D’Ferrer Beauty com certificado" loading="lazy"></div>
+      <div class="dferrer-course-slide" data-slide="9"><img src="assets/IMG_1149.jpeg" alt="Alunas do curso presencial Studio D’Ferrer Beauty com certificado" loading="lazy"></div>
+      <div class="dferrer-course-slide" data-slide="10"><img src="assets/IMG_1156.jpeg" alt="Alunas do curso presencial Studio D’Ferrer Beauty com certificado" loading="lazy"></div>
+      <div class="dferrer-course-slide" data-slide="11"><img src="assets/IMG_1151.jpeg" alt="Alunas do curso presencial Studio D’Ferrer Beauty com certificado" loading="lazy"></div>
+      <div class="dferrer-course-slide" data-slide="12"><img src="assets/IMG_1147.jpeg" alt="Alunas do curso presencial Studio D’Ferrer Beauty com certificado" loading="lazy"></div>
+      <div class="dferrer-course-slide" data-slide="13"><img src="assets/IMG_1159.jpeg" alt="Alunas do curso presencial Studio D’Ferrer Beauty com certificado" loading="lazy"></div>
+      <div class="dferrer-course-slide" data-slide="14"><img src="assets/IMG_1162.jpeg" alt="Alunas do curso presencial Studio D’Ferrer Beauty com certificado" loading="lazy"></div>
+      <div class="dferrer-course-slide" data-slide="15"><img src="assets/IMG_1146.jpeg" alt="Alunas do curso presencial Studio D’Ferrer Beauty com certificado" loading="lazy"></div>
+      </div>
+     </div>
+     <button class="dferrer-student-arrow dferrer-student-prev" type="button" aria-label="Foto anterior">‹</button>
+     <button class="dferrer-student-arrow dferrer-student-next" type="button" aria-label="Próxima foto">›</button>
+     <div class="dferrer-student-count" aria-live="polite">1 / 16</div>
     </div>
     <div class="dferrer-course-content">
      <span class="dferrer-course-kicker">Formações presenciais</span>
@@ -96,6 +118,12 @@
   </div>
  </div>
 </section>
+<!-- dferrer-student-carousel-init -->
+
+<script>
+(()=>{document.querySelectorAll('.dferrer-student-carousel').forEach(root=>{if(root.dataset.ready)return;root.dataset.ready='1';const track=root.querySelector('.dferrer-student-track'),slides=[...track.children],count=root.querySelector('.dferrer-student-count');let current=0;function show(n){current=(n+slides.length)%slides.length;track.style.transform='translateX(-'+(current*100)+'%)';slides.forEach((s,i)=>s.setAttribute('aria-hidden',i===current?'false':'true'));count.textContent=(current+1)+' / '+slides.length}root.querySelector('.dferrer-student-prev').addEventListener('click',()=>show(current-1));root.querySelector('.dferrer-student-next').addEventListener('click',()=>show(current+1));let x=0;root.querySelector('.dferrer-student-viewport').addEventListener('touchstart',e=>{x=e.changedTouches[0].clientX},{passive:true});root.querySelector('.dferrer-student-viewport').addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-x;if(Math.abs(d)>40)show(current+(d<0?1:-1))},{passive:true});show(0)})})();
+</script>
+
 <!-- Depoimentos reais das clientes do Studio D’Ferrer -->
 <section class="dferrer-testimonials" aria-labelledby="dferrer-testimonials-title">
  <div class="dferrer-testimonials-inner">
