@@ -96,10 +96,6 @@
   </div>
  </div>
 </section>
-<footer class="footer"><img src="assets/dferrer-beauty-logo-transparente.png" alt="D’Ferrer Beauty"><p>Studio D’Ferrer Beauty · Osasco, São Paulo</p><p><a href="https://www.instagram.com/studiodferrer/" target="_blank" rel="noopener">Instagram</a> · <a href="https://wa.me/5511940507965" target="_blank" rel="noopener">WhatsApp</a></p></footer>
-<script>
-(()=>{const slides=[...document.querySelectorAll('.home-slide')],dots=[...document.querySelectorAll('.carousel-dot')];if(!slides.length)return;let current=0,timer;const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;function show(i){current=(i+slides.length)%slides.length;slides.forEach((s,n)=>s.classList.toggle('active',n===current));dots.forEach((d,n)=>d.classList.toggle('active',n===current))}function start(){clearInterval(timer);if(!reduced)timer=setInterval(()=>show(current+1),4500)}document.querySelector('.carousel-prev').addEventListener('click',()=>{show(current-1);start()});document.querySelector('.carousel-next').addEventListener('click',()=>{show(current+1);start()});dots.forEach((d,n)=>d.addEventListener('click',()=>{show(n);start()}));start()})();
-</script>
 <!-- Depoimentos reais das clientes do Studio D’Ferrer -->
 <section class="dferrer-testimonials" aria-labelledby="dferrer-testimonials-title">
  <div class="dferrer-testimonials-inner">
@@ -168,6 +164,11 @@
 <script>
 (()=>{const root=document.querySelector('.dferrer-testimonials');if(!root||root.dataset.ready)return;root.dataset.ready='1';const track=root.querySelector('.dferrer-review-track'),cards=[...track.children],dots=root.querySelector('.dferrer-review-dots');let active=0;cards.forEach((_,i)=>{const b=document.createElement('button');b.type='button';b.className='dferrer-review-dot';b.setAttribute('aria-label','Ver depoimento '+(i+1));b.addEventListener('click',()=>go(i));dots.appendChild(b)});const dotButtons=[...dots.children];function go(i){active=(i+cards.length)%cards.length;track.style.transform='translateX(-'+(active*100)+'%)';dotButtons.forEach((d,n)=>{d.classList.toggle('active',n===active);d.setAttribute('aria-current',n===active?'true':'false')});cards.forEach((c,n)=>c.setAttribute('aria-hidden',n===active?'false':'true'))}root.querySelector('.dferrer-review-prev').addEventListener('click',()=>go(active-1));root.querySelector('.dferrer-review-next').addEventListener('click',()=>go(active+1));let startX=0;const win=root.querySelector('.dferrer-review-window');win.addEventListener('touchstart',e=>{startX=e.changedTouches[0].clientX},{passive:true});win.addEventListener('touchend',e=>{const delta=e.changedTouches[0].clientX-startX;if(Math.abs(delta)>45)go(active+(delta<0?1:-1))},{passive:true});go(0)})();
 </script>
+<footer class="footer"><img src="assets/dferrer-beauty-logo-transparente.png" alt="D’Ferrer Beauty"><p>Studio D’Ferrer Beauty · Osasco, São Paulo</p><p><a href="https://www.instagram.com/studiodferrer/" target="_blank" rel="noopener">Instagram</a> · <a href="https://wa.me/5511940507965" target="_blank" rel="noopener">WhatsApp</a></p></footer>
+<script>
+(()=>{const slides=[...document.querySelectorAll('.home-slide')],dots=[...document.querySelectorAll('.carousel-dot')];if(!slides.length)return;let current=0,timer;const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;function show(i){current=(i+slides.length)%slides.length;slides.forEach((s,n)=>s.classList.toggle('active',n===current));dots.forEach((d,n)=>d.classList.toggle('active',n===current))}function start(){clearInterval(timer);if(!reduced)timer=setInterval(()=>show(current+1),4500)}document.querySelector('.carousel-prev').addEventListener('click',()=>{show(current-1);start()});document.querySelector('.carousel-next').addEventListener('click',()=>{show(current+1);start()});dots.forEach((d,n)=>d.addEventListener('click',()=>{show(n);start()}));start()})();
+</script>
+
 
 <!-- WhatsApp flutuante D’Ferrer: formulário que prepara a mensagem antes de abrir o WhatsApp -->
 <div class="df-wa-widget">
