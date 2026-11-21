@@ -139,3 +139,44 @@ footer>* ,.footer>* ,.procedures-footer>*{position:relative;z-index:1}
  .founder-story-inner{gap:30px!important}
  .founder-story-mark.founder-story-portrait img{object-position:center 20%!important}
 }
+
+
+/* Cursos D’Ferrer — seção antes do rodapé */
+.dferrer-courses{background:#F5FAF8;padding:70px 22px 76px;border-top:1px solid #D9ECE8}
+.dferrer-courses-inner{width:min(1080px,100%);margin:0 auto}
+.dferrer-courses-heading{text-align:center;max-width:680px;margin:0 auto 34px}
+.dferrer-courses-heading .eyebrow{color:#087F79}
+.dferrer-courses-heading h2{margin:12px 0;color:#075F5B;font:400 clamp(34px,5vw,48px)/1.12 "Boston Angel",Georgia,serif}
+.dferrer-courses-heading p{margin:0;color:#71817C;font-size:14px;line-height:1.8}
+.dferrer-course-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;align-items:stretch}
+.dferrer-course-card{background:#FFF9F6;border:1px solid #D9ECE8;border-radius:17px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 8px 24px rgba(7,95,91,.045)}
+.dferrer-course-gallery{padding:13px 13px 0}
+.dferrer-course-gallery-placeholder{min-height:260px;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;padding:25px;background:linear-gradient(145deg,#E6F4F1,#FFF9F6 65%,#FCEAF0);border:1px dashed #9BD6CE;border-radius:10px;color:#075F5B}
+.gallery-mark{font:400 46px/1 "Boston Angel",Georgia,serif}
+.dferrer-course-gallery-placeholder strong{font:400 28px/1.1 "Boston Angel",Georgia,serif}
+.dferrer-course-gallery-placeholder small{max-width:230px;color:#71817C;font-size:11px;line-height:1.6}
+.gallery-dots{color:#32C7BE;font-size:10px;letter-spacing:7px}
+.dferrer-online-art{min-height:286px;margin:13px 13px 0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:13px;text-align:center;background:linear-gradient(145deg,#DDF2EE 0%,#FFF9F6 58%,#FCE8EF 100%);border:1px solid #CBE6E1;border-radius:10px;color:#075F5B;position:relative;overflow:hidden}
+.dferrer-online-art:before,.dferrer-online-art:after{content:"";position:absolute;width:76%;aspect-ratio:1;border:1px solid rgba(50,145,136,.2);border-radius:50%}
+.dferrer-online-art:after{width:58%}
+.dferrer-online-art>*{position:relative;z-index:1}
+.dferrer-online-small{font-size:9px;letter-spacing:.22em;color:#318E86}
+.dferrer-online-title{font:400 clamp(42px,5vw,58px)/.94 "Boston Angel",Georgia,serif;letter-spacing:-.03em}
+.dferrer-online-title em{font-style:normal;color:#087F79}
+.dferrer-online-line{width:48px;height:1px;background:#32C7BE}
+.dferrer-online-caption{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#71817C}
+.dferrer-course-content{padding:22px 23px 24px;display:flex;flex-direction:column;align-items:flex-start;flex:1}
+.dferrer-course-kicker{font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#087F79}
+.dferrer-course-content h3{margin:8px 0 10px;color:#075F5B;font:400 30px/1.1 "Boston Angel",Georgia,serif}
+.dferrer-course-content p{margin:0 0 20px;color:#657873;font-size:12px;line-height:1.8}
+.dferrer-course-button{margin-top:auto;min-height:41px;display:inline-flex;align-items:center;justify-content:center;padding:0 19px;border:1px solid #32C7BE;border-radius:24px;background:#32C7BE;color:#075F5B;font-size:11px;font-weight:600;text-align:center;transition:filter .2s}
+.dferrer-course-button:hover{filter:brightness(.97)}
+@media(max-width:700px){
+ .dferrer-courses{padding:52px 18px 58px}
+ .dferrer-courses-heading{margin-bottom:25px}
+ .dferrer-course-grid{grid-template-columns:1fr;gap:17px}
+ .dferrer-course-gallery-placeholder{min-height:220px}
+ .dferrer-online-art{min-height:230px}
+ .dferrer-course-content{padding:19px 19px 22px}
+ .dferrer-course-content h3{font-size:28px}
+}
