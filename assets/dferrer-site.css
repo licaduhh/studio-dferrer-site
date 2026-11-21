@@ -449,3 +449,13 @@ body.df-wa-lock{overflow:hidden}
 .hiper-brasileiro-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:30px;height:30px;border:0;border-radius:50%;background:rgba(255,255,255,.88);color:#267f79;font-size:23px;line-height:1;cursor:pointer}
 .hiper-brasileiro-prev{left:9px}.hiper-brasileiro-next{right:9px}
 .hiper-brasileiro-count{position:absolute;right:10px;bottom:9px;z-index:2;padding:3px 8px;border-radius:20px;background:rgba(0,0,0,.48);color:#fff;font-size:10px}
+
+/* Carrossel — Volume Turquesa */
+.volume-turquesa-carousel{position:relative;overflow:hidden;background:#f7f7f7}
+.volume-turquesa-track,.volume-turquesa-slide{width:100%;height:100%}
+.volume-turquesa-slide{display:none;position:absolute;inset:0}
+.volume-turquesa-slide.active{display:block}
+.volume-turquesa-slide img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.volume-turquesa-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:30px;height:30px;border:0;border-radius:50%;background:rgba(255,255,255,.88);color:#267f79;font-size:23px;line-height:1;cursor:pointer}
+.volume-turquesa-prev{left:9px}.volume-turquesa-next{right:9px}
+.volume-turquesa-count{position:absolute;right:10px;bottom:9px;z-index:2;padding:3px 8px;border-radius:20px;background:rgba(0,0,0,.48);color:#fff;font-size:10px}
