@@ -73,6 +73,20 @@ p,li,a,button,input,textarea,select,label,small,
 
 
 .wordmark img{display:block;width:min(330px,48vw);height:auto}
+
+/* FIX DEFINITIVO: Bodoni Moda tem prioridade sobre a regra geral de DM Sans */
+html body h1,html body h2,html body h3,html body h4,html body h5,html body h6,
+html body .brand,html body .wordmark,html body .footer-brand,
+html body .section-title,html body .section-label,
+html body .about-text h3,html body .founder-copy h3,
+html body .service-card h3,html body .body h2,
+html body .hero h1,html body .hero h1 em,
+html body .photo-caption,html body .display-title {
+  font-family:'Bodoni Moda',Georgia,serif!important;
+  font-style:normal!important;
+  font-weight:400!important;
+}
+
 </style>
 </head>
 <body>
