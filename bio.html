@@ -314,6 +314,35 @@ main{width:min(calc(100% - 42px),460px)!important;margin:0 auto!important;paddin
  .footer::after{height:150px!important;background-size:100% auto!important}
 }
 @media(max-width:380px){.links .link{font-size:17px!important}}
+</style><style id="dferrer-exact-final-fix">
+/* Texto com a capitalização original: maiúsculas e minúsculas */
+html body nav.links a.link,
+html body nav.links a.link:visited,
+html body nav.links a.link:hover{
+ text-transform:none!important;
+ font-variant:normal!important;
+ letter-spacing:0!important;
+ font-family:'DM Sans',Arial,sans-serif!important;
+ font-size:18px!important;
+ font-weight:400!important;
+}
+/* Uma única faixa floral no rodapé: elimina a repetição visual */
+html body main footer.footer::after{
+ content:""!important;
+ display:block!important;
+ background-image:url("./assets/footer-flores-dferrer-transparente.png")!important;
+ background-repeat:no-repeat!important;
+ background-position:center bottom!important;
+ background-size:100% 200%!important;
+ height:150px!important;
+}
+html body main footer.footer{
+ background-image:none!important;
+}
+@media(max-width:700px){
+ html body nav.links a.link{font-size:18px!important;text-transform:none!important;letter-spacing:0!important}
+ html body main footer.footer::after{height:150px!important;background-size:100% 200%!important}
+}
 </style></head>
 <body><main>
 <div class="avatar-placeholder"><img src="./assets/4F961B9D-B741-4547-84F9-EF9C93CEACAF.png" alt="Foto de Angélica Ferreira"></div>
