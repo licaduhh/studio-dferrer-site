@@ -247,6 +247,28 @@ header{background:rgba(255,249,246,.96)!important;border-color:#B8E6E1!important
 @font-face{font-family:'Boston Angel';src:url('./assets/boston-angel-regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
 h1,h2,h3,h4,h5,h6,.section-label,.body h2{font-family:'Boston Angel',serif!important;font-weight:400!important;letter-spacing:0!important}
 </style>
+
+<style id="dferrer-visual-redesign">
+:root{--paper:#fbf8f4;--ink:#263f3c;--muted:#71817b;--teal:#70c9c0;--deep:#164d49;--mint:#e4f2ee;--line:#e4e9e3;--yellow:#f3eadb;--pink:#f5e5e5}
+@font-face{font-family:'Boston Angel';src:url('./assets/boston-angel-regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+html{scroll-padding-top:100px}body{background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif;font-size:14px;line-height:1.7}
+h1,h2,h3,h4,h5,h6,.wordmark,.section-label{font-family:'Boston Angel',serif!important;font-weight:400!important;font-style:normal!important;letter-spacing:0!important}
+.wrap{width:min(1180px,calc(100% - 56px))}
+header{height:84px;background:rgba(251,248,244,.94);border-bottom:1px solid #e5e8e1;box-shadow:0 6px 24px #254a4310}
+.wordmark{font-size:31px;letter-spacing:.02em;color:var(--deep)}.back{font-size:10px;letter-spacing:.16em;color:#397e75}
+.hero{text-align:left;padding:62px 58px;margin:34px auto 28px;max-width:1180px;border-radius:2px;background:#e5f0eb;position:relative;overflow:hidden}
+.hero:after{content:'D’F';position:absolute;right:45px;bottom:-90px;font:400 260px/1 'Boston Angel',serif;color:#176f69;opacity:.055;pointer-events:none}
+.eyebrow{font-size:10px;letter-spacing:.2em;color:#39867c}.hero h1{font-size:clamp(48px,6vw,76px);line-height:1;color:#244b46;margin:20px 0 12px;letter-spacing:0}.hero h1 em{display:inline;font:400 1.05em/1 'Boston Angel',serif;color:#398d84;margin:0}.hero p{max-width:720px;margin:18px 0 0;color:#61746d;font-size:15px;line-height:1.9}
+.tabs{justify-content:flex-start;gap:9px;margin:28px auto 0}.tabs a{border:1px solid #cbded7;border-radius:2px;padding:11px 18px;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#397e75;background:#fff;transition:.2s}.tabs a:hover{background:#176f69;color:#fff;transform:translateY(-2px)}
+.catalog{padding:44px 0 100px}.section-label{text-align:left;margin:0 0 26px;color:#28534d;font-size:clamp(36px,4vw,52px);line-height:1}
+.cards{gap:24px}.card{padding:0;background:#fff;border:1px solid #e7e9e2;border-radius:2px;box-shadow:0 12px 36px #234a4309;overflow:hidden;transition:transform .25s,box-shadow .25s}.card:hover{transform:translateY(-4px);box-shadow:0 20px 44px #234a4318}
+.photo{height:340px;padding:14px;background:#f4f5f0;border:0;border-radius:0;overflow:hidden}.photo img,.lash-slide img,.brow-slide img{width:100%;height:100%;object-fit:contain!important;object-position:center!important}
+.body{padding:22px 24px 25px}.num{font-size:9px;letter-spacing:.17em;color:#55958b}.body h2{font-size:31px;line-height:1.1;color:#28534d;margin:8px 0 10px}.body p{font-size:13px;line-height:1.8;color:#72817b;margin:0 0 15px}.book{display:inline-block;padding:11px 17px;background:#176f69;color:#fff;border:1px solid #176f69;border-radius:2px;font-size:9px;letter-spacing:.15em;text-transform:uppercase;transition:.2s}.book:hover{background:#164d49}
+.lash-carousel,.brow-carousel{background:#f4f5f0;border:0;border-radius:0}.lash-carousel-track,.brow-track{height:100%}.lash-arrow{background:#fff;color:#176f69;border:1px solid #dce7e1;box-shadow:0 3px 12px #234a4315}.lash-dot,.brow-dots button{background:#bfd5ce}.lash-dot.is-active,.brow-dots button.is-active{background:#176f69}
+.catalog-overview{padding:22px 0 30px}.overview-grid{gap:16px}.overview-card{background:#fff;border:1px solid #e6e9e2;border-radius:2px;padding:22px}.overview-number{color:#57958b}.overview-heading{font:400 26px 'Boston Angel',serif;color:#28534d}.overview-link{color:#287d73;font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+footer{background:#174f49;color:#f8f6ef;padding:44px 0}.footer-florals{opacity:.2}
+@media(max-width:760px){.wrap{width:calc(100% - 34px)}header{height:72px}.wordmark{font-size:25px}.hero{padding:42px 25px;margin:20px auto}.hero:after{font-size:150px;right:10px;bottom:-45px}.hero h1{font-size:48px}.hero p{font-size:14px}.tabs{gap:7px}.tabs a{padding:10px 12px;font-size:8px}.catalog{padding:32px 0 70px}.cards{gap:17px}.photo{height:310px;padding:10px}.body{padding:19px}.body h2{font-size:28px}}
+</style>
 </head>
 <body>
 <header><div class="wrap nav"><a class="wordmark" href="index.html"><img src="./assets/logo-dferrer-beauty.svg" alt="D’Ferrer Beauty"></a><a class="back" href="index.html">← Voltar ao site</a></div></header>
@@ -373,7 +395,3 @@ document.querySelectorAll('[data-lash-carousel]').forEach(carousel=>{
 
 </script>
 </body></html>
-<style id="boston-angel-all-headings">
-/* Boston Angel em todos os títulos */
-h1,h2,h3,h4,h5,h6,.section-title,.section-label,.section-kicker,.photo-caption,.brand,.footer-brand,.signature { font-family:'Boston Angel',serif!important; font-style:normal!important; font-weight:400!important; }
-</style>
