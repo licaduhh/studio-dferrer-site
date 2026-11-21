@@ -381,3 +381,14 @@ body.df-wa-lock{overflow:hidden}
 .fio-a-fio-prev{left:9px}
 .fio-a-fio-next{right:9px}
 .fio-a-fio-count{position:absolute;right:10px;bottom:9px;padding:4px 9px;border-radius:20px;background:rgba(255,255,255,.9);color:#087F79;font-size:10px;letter-spacing:.05em}
+
+/* Carrossel de fotos do Volume Brasileiro */
+.volume-brasileiro-carousel{position:relative;height:245px;overflow:hidden;background:#EDF7F4}
+.volume-brasileiro-viewport{width:100%;height:100%;overflow:hidden;touch-action:pan-y}
+.volume-brasileiro-track{display:flex;width:100%;height:100%;transition:transform .38s ease}
+.volume-brasileiro-slide{flex:0 0 100%;width:100%;height:100%}
+.volume-brasileiro-slide img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.volume-brasileiro-arrow{position:absolute;top:50%;transform:translateY(-50%);width:30px;height:30px;padding:0;border:1px solid rgba(255,255,255,.8);border-radius:50%;background:rgba(255,255,255,.9);color:#087F79;font:300 24px/1 Arial,sans-serif;box-shadow:0 2px 8px rgba(0,0,0,.12);cursor:pointer}
+.volume-brasileiro-prev{left:9px}
+.volume-brasileiro-next{right:9px}
+.volume-brasileiro-count{position:absolute;right:10px;bottom:9px;padding:4px 9px;border-radius:20px;background:rgba(255,255,255,.9);color:#087F79;font-size:10px;letter-spacing:.05em}
