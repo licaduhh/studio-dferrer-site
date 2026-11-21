@@ -163,6 +163,24 @@ body{background:#FFF9F6!important;color:#244B49}
 a:hover{color:#087F79}
 @media(max-width:700px){.navlinks{background:#FFF9F6!important;border-color:#B8E6E1!important}}
 
+
+/* Ajustes finais — paleta Tiffany Fresh e catálogo em cards individuais */
+:root{--teal:#32C7BE;--teal-dark:#087F79;--teal-deep:#075F5B;--mint:#B8E6E1;--paper:#FFF9F6;--ink:#244B49;--muted:#71817C;--line:#E8DED4;--blush:#FFD6E5;--sand:#FBE7B5}
+body{background:#FFF9F6!important;color:#244B49}
+header{background:rgba(255,249,246,.96)!important;border-color:#B8E6E1!important}
+.hero{background:linear-gradient(120deg,#FFF9F6 0%,#FFF9F6 52%,#B8E6E1 100%)!important}
+.hero h1,.section-label,.body h2{color:#075F5B!important}
+.hero h1 em{color:#087F79!important}
+.cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.card{background:#fff;border:1px solid #B8E6E1;border-radius:24px;box-shadow:0 12px 32px rgba(7,95,91,.07)}
+.photo{height:290px;background:#B8E6E1;border-radius:18px;padding:8px}
+.photo img{border-radius:13px;object-fit:cover}
+.body h2{font-size:30px}
+.body p{color:#526e69;line-height:1.85}
+.book{background:#FFF9F6;border-color:#32C7BE;color:#075F5B}
+.book:hover{background:#B8E6E1;border-color:#087F79}
+@media(max-width:680px){.cards{grid-template-columns:1fr;gap:18px}.photo{height:250px}.body{padding:18px 10px 14px}}
+
 </style>
 </head>
 <body>
@@ -171,16 +189,20 @@ a:hover{color:#087F79}
 <section class="hero"><div class="wrap"><div class="eyebrow">D’Ferrer Beauty · Osasco</div><h1>Procedimentos <em>exclusivos</em></h1><p>Cada detalhe é pensado para valorizar sua beleza natural. Conheça nossos cuidados e escolha o momento que combina com você.</p>
 <nav class="tabs" aria-label="Categorias"><a href="#cilios">Cílios</a><a href="#sobrancelhas">Sobrancelhas</a><a href="#labios">Lábios</a></nav></div></section>
 <section class="catalog"><div class="wrap">
-<h2 class="section-label" id="cilios">Olhar · Cílios</h2><div class="cards">
-<article class="card reveal"><div class="photo"><img src="https://images.unsplash.com/photo-1583001931096-959e9a1a6223?auto=format&fit=crop&w=1200&q=85" alt="Detalhe de olhar com maquiagem delicada" loading="lazy"></div><div class="body"><span class="num">01</span><h2>Extensão de cílios</h2><p>Realce seu olhar com uma técnica escolhida de acordo com seu estilo. Do efeito delicado ao mais marcante, buscamos um resultado harmonioso e personalizado.</p><a class="book" href="https://www.instagram.com/studiodferrer/" target="_blank" rel="noopener">Consultar horários <span>↗</span></a></div></article>
-<article class="card reveal"><div class="photo"><img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=1200&q=85" alt="Autocuidado e beleza do olhar" loading="lazy"></div><div class="body"><span class="num">02</span><h2>Lash Lifting</h2><p>Valorize seus cílios naturais com curvatura e definição, criando um olhar mais aberto e elegante sem precisar de extensão.</p><a class="book" href="https://www.instagram.com/studiodferrer/" target="_blank" rel="noopener">Consultar horários <span>↗</span></a></div></article>
+<h2 class="section-label" id="cilios">Olhar · Cílios</h2>
+<div class="cards">
+<article class="card reveal"><div class="photo"><img src="https://images.unsplash.com/photo-1583001931096-959e9a1a6223?auto=format&fit=crop&w=1200&q=85" alt="Extensão de cílios com acabamento delicado" loading="lazy"></div><div class="body"><span class="num">01 · CÍLIOS</span><h2>Extensão de cílios</h2><p>Escolha entre efeitos naturais, leves, glamourosos e premium. Nosso catálogo reúne técnicas como Efeito Rímel, Molhado, Angel Eyes, Sirena, Brasileiro, Egípcio, Safira, Fox, Spikes, Shine, Super Fio a Fio, Fox Tiffany, Hiper Brasileiro, Turquesa e Maldivas. A técnica é indicada de acordo com o seu estilo e a harmonia do seu olhar.</p><a class="book" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener">Agendar on-line <span>↗</span></a></div></article>
+<article class="card reveal"><div class="photo"><img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=1200&q=85" alt="Cílios naturais com curvatura de Lash Lifting" loading="lazy"></div><div class="body"><span class="num">02 · CÍLIOS NATURAIS</span><h2>Lash Lifting</h2><p>Realizado com os seus próprios cílios naturais, ajuda a alongar e curvar os fios para um olhar mais aberto e definido. O catálogo indica retorno em aproximadamente 30 dias.</p><a class="book" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener">Agendar on-line <span>↗</span></a></div></article>
 </div>
-<h2 class="section-label" id="sobrancelhas" style="margin-top:72px">Harmonia · Sobrancelhas</h2><div class="cards">
-<article class="card reveal"><div class="photo"><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=1200&q=85" alt="Beleza natural e harmonia facial" loading="lazy"></div><div class="body"><span class="num">03</span><h2>Design de sobrancelhas</h2><p>Desenho personalizado que respeita seus traços e valoriza a expressão, trazendo equilíbrio e definição ao olhar.</p><a class="book" href="https://www.instagram.com/studiodferrer/" target="_blank" rel="noopener">Consultar horários <span>↗</span></a></div></article>
-<article class="card reveal"><div class="photo"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=85" alt="Momento de beleza e cuidado pessoal" loading="lazy"></div><div class="body"><span class="num">04</span><h2>Brow Lamination</h2><p>Alinhamento e estilização dos fios para um efeito mais preenchido, organizado e moderno, mantendo a naturalidade.</p><a class="book" href="https://www.instagram.com/studiodferrer/" target="_blank" rel="noopener">Consultar horários <span>↗</span></a></div></article>
+<h2 class="section-label" id="sobrancelhas" style="margin-top:72px">Harmonia · Sobrancelhas</h2>
+<div class="cards">
+<article class="card reveal"><div class="photo"><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=1200&q=85" alt="Design de sobrancelhas" loading="lazy"></div><div class="body"><span class="num">03 · SOBRANCELHAS</span><h2>Design de sobrancelhas</h2><p>Marcação de simetria com linha e retirada dos fios com pinça, sempre após a aprovação da cliente. Você pode escolher o design simples ou com henna/tintura. Todos os designs incluem o Spa das Sobrancelhas: esfoliação, argila, massagem e gel calmante.</p><a class="book" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener">Agendar on-line <span>↗</span></a></div></article>
+<article class="card reveal"><div class="photo"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=85" alt="Sobrancelhas alinhadas com Brow Lamination" loading="lazy"></div><div class="body"><span class="num">04 · SOBRANCELHAS</span><h2>Brow Lamination</h2><p>Técnica que alinha e define os fios, criando um efeito mais preenchido e natural. No catálogo, a finalização inclui tintura e o procedimento tem duração aproximada de 1h30.</p><a class="book" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener">Agendar on-line <span>↗</span></a></div></article>
 </div>
-<h2 class="section-label" id="labios" style="margin-top:72px">Cuidado · Lábios</h2><div class="cards">
-<article class="card reveal"><div class="photo"><img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=1200&q=85" alt="Detalhes de beleza e autocuidado" loading="lazy"></div><div class="body"><span class="num">05</span><h2>Hydra Gloss</h2><p>Um cuidado dedicado aos lábios para realçar a aparência, proporcionar sensação de hidratação e um acabamento bonito e delicado.</p><a class="book" href="https://www.instagram.com/studiodferrer/" target="_blank" rel="noopener">Consultar horários <span>↗</span></a></div></article>
+<h2 class="section-label" id="tratamentos" style="margin-top:72px">Cuidado · Tratamentos</h2>
+<div class="cards">
+<article class="card reveal"><div class="photo"><img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=1200&q=85" alt="Tratamento Hydra Gloss para os lábios" loading="lazy"></div><div class="body"><span class="num">05 · LÁBIOS</span><h2>Hydra Gloss</h2><p>Tratamento que revitaliza e hidrata os lábios, suavizando linhas finas ao redor e ajudando a reduzir o ressecamento, para deixá-los mais macios e com aparência rejuvenescida.</p><a class="book" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener">Agendar on-line <span>↗</span></a></div></article>
+<article class="card reveal"><div class="photo"><img src="https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=1200&q=85" alt="Tratamento Fort Brow para sobrancelhas" loading="lazy"></div><div class="body"><span class="num">06 · SOBRANCELHAS</span><h2>Fort Brow</h2><p>Tratamento que combina microagulhamento e sérum para estimular o crescimento de novos fios, ajudar a preencher falhas e conquistar sobrancelhas com aparência mais cheia.</p><a class="book" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener">Agendar on-line <span>↗</span></a></div></article>
 </div>
 </div></section>
 </main>
