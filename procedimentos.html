@@ -213,6 +213,20 @@ header{background:rgba(255,249,246,.96)!important;border-color:#B8E6E1!important
 .lash-dot.is-active{width:20px;border-radius:99px;background:#087F79}
 @media(prefers-reduced-motion:reduce){.lash-slide{transition:none}}
 
+
+/* Catálogo: fotos inteiras, sem cortes, e cards mais amplos */
+.cards{gap:30px}
+.card{padding:14px}
+.photo{height:340px;padding:10px;background:#F7FCFB}
+.photo img,.lash-slide{object-fit:contain!important;object-position:center!important}
+.lash-carousel{background:#F7FCFB!important}
+.lash-carousel-track{background:#F7FCFB}
+@media(max-width:680px){
+  .cards{gap:22px}
+  .card{padding:12px}
+  .photo{height:310px;padding:8px}
+}
+
 </style>
 </head>
 <body>
