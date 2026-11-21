@@ -1,0 +1,193 @@
+/* Studio D’Ferrer Beauty — Tiffany Fresh editorial redesign */
+@font-face{
+  font-family:"Boston Angel";
+  src:url("./boston-angel-regular.woff2") format("woff2");
+  font-style:normal;
+  font-weight:400;
+  font-display:swap;
+}
+:root{
+  --df-tiffany:#32C7BE;
+  --df-tiffany-light:#B8E6E1;
+  --df-yellow:#FBE7B5;
+  --df-pink:#FFD6E5;
+  --df-paper:#FFF9F6;
+  --df-ink:#344542;
+  --df-muted:#71817D;
+  --df-line:#DDECE8;
+  --df-deep:#167F79;
+  --df-white:#FFFFFF;
+  --tiffany:var(--df-tiffany);
+  --teal:var(--df-tiffany);
+  --teal-dark:var(--df-deep);
+  --teal-deep:#176D68;
+  --mint:var(--df-tiffany-light);
+  --paper:var(--df-paper);
+  --ink:var(--df-ink);
+  --muted:var(--df-muted);
+  --line:var(--df-line);
+  --blush:var(--df-pink);
+  --sand:var(--df-yellow);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:82px}
+body{background:var(--df-paper)!important;color:var(--df-ink)!important;font-family:"DM Sans","Manrope",sans-serif!important;font-size:14px}
+h1,h2,h3,h4,.brand,.brand-mark,.wordmark,.section-title,.section-label,.photo-caption,.signature,.about-text h3,.service-card h3,.body h2,.founder-copy h3,.wa-modal-head h2{
+  font-family:"Boston Angel","DM Sans",sans-serif!important;
+  font-weight:400!important;
+  letter-spacing:0!important;
+}
+h1{font-size:clamp(36px,4.4vw,58px)!important;line-height:1.08!important}
+h2.section-title,.section-title{font-size:clamp(32px,3.7vw,46px)!important;line-height:1.12!important}
+h3{font-size:clamp(21px,2.3vw,28px)!important;line-height:1.18!important}
+p{line-height:1.85}
+a{transition:color .2s ease,background-color .2s ease,border-color .2s ease}
+.container,.wrap{width:min(1200px,calc(100% - 48px))!important}
+.topbar,header{background:rgba(255,249,246,.94)!important;border-bottom:1px solid var(--df-line)!important;backdrop-filter:blur(14px)}
+.nav{height:76px!important}
+.brand,.wordmark{color:var(--df-deep)!important;font-size:26px!important}
+.brand-mark{width:36px!important;height:36px!important;border-color:var(--df-tiffany)!important;color:var(--df-deep)!important}
+.navlinks{gap:23px!important;color:#566A66!important;font-size:10px!important;letter-spacing:.11em!important}
+.navlinks a:hover,.back:hover{color:var(--df-deep)!important}
+.btn,.book,.service-card-link,.service-booking,.wa-submit{
+  min-height:42px!important;height:42px!important;padding:0 21px!important;
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+  border-radius:24px!important;background:var(--df-tiffany)!important;color:#174D49!important;
+  border:1px solid var(--df-tiffany)!important;box-shadow:none!important;
+  font:600 11px/1 "DM Sans",sans-serif!important;letter-spacing:.025em!important;
+  text-transform:none!important;transform:none!important;
+}
+.btn:hover,.book:hover,.service-card-link:hover,.service-booking:hover,.wa-submit:hover{
+  background:var(--df-deep)!important;border-color:var(--df-deep)!important;color:#fff!important;
+}
+.btn-outline{background:transparent!important;color:var(--df-deep)!important;border:1px solid var(--df-tiffany)!important}
+.btn-outline:hover{background:var(--df-tiffany-light)!important;color:var(--df-deep)!important}
+.hero{padding:58px 0 62px!important;background:linear-gradient(115deg,var(--df-paper) 0%,#FFF9F6 56%,#EAF7F4 100%)!important}
+.hero-grid{gap:52px!important}
+.eyebrow,.section-kicker{color:var(--df-deep)!important;font-size:9px!important;letter-spacing:.2em!important}
+.hero h1{color:var(--df-ink)!important;max-width:560px}
+.hero h1 em{color:var(--df-deep)!important}
+.hero-copy,.section-lead,.about-text p,.contact-copy p{color:var(--df-muted)!important;font-size:13px!important;line-height:1.9!important}
+.hero-visual{min-height:500px!important}
+.hero-photo{border:6px solid #fff!important;border-radius:150px 150px 4px 4px!important;box-shadow:0 14px 40px rgba(40,85,78,.10)!important}
+.hero-photo img{filter:none!important}
+.photo-caption{background:#fff!important;color:var(--df-deep)!important;border-radius:3px!important;font-size:18px!important;box-shadow:0 8px 25px rgba(40,85,78,.09)!important}
+.butterfly{color:var(--df-tiffany)!important}
+.stats{background:var(--df-tiffany-light)!important;padding:18px 0 35px!important}
+.stats-grid{border-color:rgba(22,127,121,.18)!important}
+.stat{background:rgba(255,255,255,.72)!important;border:1px solid rgba(22,127,121,.10)!important;border-radius:12px!important;padding:17px 10px!important}
+.stat strong{color:var(--df-deep)!important;font-family:"Boston Angel",sans-serif!important}
+.stat span{color:#526D68!important;font-size:10px!important;letter-spacing:.04em!important}
+.intro,.results,.testimonials{padding:78px 0!important;background:var(--df-paper)!important}
+.section-title{color:var(--df-ink)!important;margin:12px 0 15px!important}
+.about-grid{gap:60px!important;margin-top:48px!important}
+.about-image{height:470px!important;border-radius:110px 110px 3px 3px!important;background:var(--df-tiffany-light)!important}
+.about-image img{filter:none!important}
+.about-text h3{color:var(--df-deep)!important;font-size:32px!important}
+.signature{color:var(--df-deep)!important}
+.services,.difference{padding:78px 0!important;background:#F3F9F7!important}
+.service-grid{gap:14px!important;background:transparent!important;border:0!important}
+.service-card,.benefit,.review-card{
+  background:#fff!important;border:1px solid var(--df-line)!important;
+  border-radius:12px!important;box-shadow:0 5px 18px rgba(35,87,80,.045)!important;
+}
+.service-card{padding:25px 22px!important;min-height:195px!important}
+.service-card:hover{transform:translateY(-2px)!important;box-shadow:0 10px 24px rgba(35,87,80,.08)!important}
+.service-number,.num{color:var(--df-deep)!important;font-size:10px!important;letter-spacing:.08em!important}
+.service-card h3,.body h2{color:var(--df-deep)!important;font-size:23px!important}
+.service-card p,.body p{color:var(--df-muted)!important;font-size:12px!important;line-height:1.8!important}
+.benefits{gap:14px!important}
+.benefit{padding:22px 15px!important}
+.benefit-icon{width:42px!important;height:42px!important;border-color:var(--df-tiffany-light)!important;color:var(--df-deep)!important}
+.benefit h3{color:var(--df-deep)!important;font-size:19px!important}
+.benefit p{color:var(--df-muted)!important;font-size:11px!important}
+.gallery{gap:10px!important}
+.gallery-item{background:var(--df-tiffany-light)!important}
+.gallery-item img{filter:none!important}
+.gallery-label{color:var(--df-deep)!important;border-radius:2px!important;font-size:9px!important}
+.quote{border:1px solid var(--df-line)!important;background:#fff!important;color:var(--df-muted)!important;font-size:18px!important}
+.review-card p{color:var(--df-muted)!important;font-size:12px!important}
+.review-card strong{color:var(--df-deep)!important}
+.review-stars{color:#C39B52!important}
+.contact{padding:78px 0!important;background:#F2F9F7!important}
+.contact-grid{gap:48px!important}
+.contact-panel{background:#fff!important;border:1px solid var(--df-line)!important;border-radius:12px!important;padding:26px!important}
+.contact-row{border-color:var(--df-line)!important}
+.contact-row strong{color:var(--df-deep)!important}
+.contact-row span{color:var(--df-muted)!important}
+.contact-icon{color:var(--df-deep)!important}
+.footer{background:var(--df-deep)!important;color:#fff!important}
+.footer p,.footer-links,.footer-links a{color:rgba(255,255,255,.88)!important}
+.footer .brand{color:#fff!important}
+.whatsapp-float{right:18px!important;bottom:18px!important;padding:12px 17px!important;border-radius:24px!important;background:var(--df-deep)!important;color:#fff!important;font:600 11px "DM Sans",sans-serif!important;box-shadow:0 5px 16px rgba(20,70,65,.16)!important}
+.wa-modal{border-radius:14px!important}
+.wa-modal-head{background:var(--df-deep)!important}
+.wa-submit{width:100%!important;color:#fff!important}
+.wa-field input,.wa-field select,.wa-field textarea{border-radius:8px!important;border-color:var(--df-line)!important}
+.wa-field input:focus,.wa-field select:focus,.wa-field textarea:focus{border-color:var(--df-tiffany)!important;box-shadow:0 0 0 3px rgba(50,199,190,.14)!important}
+.instagram-card{border-radius:12px!important;border-color:var(--df-line)!important}
+.founder-highlight strong{color:var(--df-deep)!important;font-family:"Boston Angel",sans-serif!important}
+.founder-highlight{border-color:var(--df-line)!important}
+.service-photo-placeholder,.photo-placeholder{background:linear-gradient(145deg,#EAF7F4,#B8E6E1)!important}
+.tabs a{border-color:var(--df-tiffany-light)!important;color:var(--df-deep)!important;border-radius:24px!important}
+.tabs a:hover{background:var(--df-tiffany-light)!important;transform:none!important}
+.catalog{padding-top:34px!important}
+.section-label{font-size:30px!important;color:var(--df-ink)!important}
+.cards{gap:18px!important}
+.card{border:1px solid var(--df-line)!important;border-radius:12px!important;padding:9px!important;box-shadow:0 5px 18px rgba(35,87,80,.045)!important}
+.card:hover{transform:translateY(-2px)!important;box-shadow:0 10px 24px rgba(35,87,80,.08)!important}
+.photo{border-radius:8px!important;background:#F1F7F5!important}
+.photo img{border-radius:5px!important;filter:none!important}
+.body{padding:15px 8px 10px!important}
+.body h2{margin-bottom:9px!important}
+.book{font-size:11px!important}
+footer{background:var(--df-deep)!important}
+footer p{color:rgba(255,255,255,.88)!important}
+@media(max-width:900px){
+  .container,.wrap{width:calc(100% - 38px)!important}
+  .hero-grid{gap:30px!important}
+  .navlinks{gap:14px!important}
+}
+@media(max-width:700px){
+  .container,.wrap{width:calc(100% - 34px)!important}
+  .nav{height:68px!important}
+  .brand,.wordmark{font-size:22px!important}
+  .navlinks{top:68px!important;background:var(--df-paper)!important;border-color:var(--df-line)!important}
+  .hero{padding:38px 0 48px!important}
+  .hero-grid{grid-template-columns:1fr!important;gap:24px!important}
+  .hero-grid>div:first-child{order:2}
+  .hero-visual{order:1;min-height:360px!important}
+  .hero-photo{inset:0 16px!important;border-radius:110px 110px 3px 3px!important}
+  .hero h1{font-size:clamp(36px,10vw,48px)!important;margin:14px 0!important}
+  .hero-copy{font-size:12px!important;margin-bottom:20px!important}
+  .hero-actions{gap:9px!important}
+  .btn{min-height:40px!important;height:40px!important;padding:0 16px!important;font-size:10px!important}
+  .hero-note{margin-top:22px!important;font-size:9px!important}
+  .stats{padding:10px 0 22px!important}
+  .stats-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:6px!important}
+  .stat{padding:12px 5px!important;border-radius:9px!important}
+  .stat strong{font-size:23px!important}
+  .stat span{font-size:8px!important;line-height:1.3!important}
+  .intro,.results,.testimonials,.services,.difference,.contact{padding:58px 0!important}
+  .section-title{font-size:34px!important}
+  .about-grid{grid-template-columns:1fr!important;gap:25px!important;margin-top:32px!important}
+  .about-image{height:330px!important;border-radius:90px 90px 2px 2px!important}
+  .about-text h3{font-size:28px!important}
+  .service-grid{grid-template-columns:1fr!important;gap:10px!important;margin-top:28px!important}
+  .service-card{min-height:0!important;padding:21px!important}
+  .benefits{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+  .benefit{padding:18px 10px!important}
+  .gallery{grid-template-columns:1fr 1fr!important;gap:7px!important}
+  .reviews-grid{grid-template-columns:1fr!important}
+  .contact-grid{grid-template-columns:1fr!important;gap:24px!important}
+  .contact-panel{padding:20px!important}
+  .cards{grid-template-columns:1fr!important;gap:14px!important}
+  .photo{height:260px!important}
+  .body h2{font-size:24px!important}
+  .hero p,.section-lead{font-size:12px!important}
+  .footer-inner{padding-bottom:115px!important}
+  .whatsapp-float{right:12px!important;bottom:12px!important;padding:11px 14px!important;font-size:10px!important}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
