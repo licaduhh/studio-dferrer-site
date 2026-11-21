@@ -24,6 +24,21 @@
     .contact{padding:85px 0;background:#f0faf8}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.contact-copy p{color:var(--muted);font-size:14px;line-height:1.9;max-width:450px}.contact-panel{background:#fff;padding:32px;border:1px solid var(--line)}.contact-row{display:flex;gap:15px;padding:14px 0;border-bottom:1px solid #edf3f1}.contact-row:last-child{border:0}.contact-icon{color:var(--teal-dark);font-size:18px;width:24px}.contact-row strong{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#42615d;margin-bottom:4px}.contact-row span{font-size:13px;color:var(--muted)}.footer{padding:32px 0;background:#214a47;color:#d5eeea}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}.footer .brand{color:#e2f7f3}.footer p{font-size:11px;color:#a9cbc5}.footer-links{display:flex;gap:18px;font-size:11px;color:#c5e2dd}
     @media(max-width:900px){.navlinks{gap:14px}.navlinks a{font-size:10px}.hero-grid{gap:30px}.hero-visual{min-height:440px}.about-grid{gap:38px}.benefits{grid-template-columns:repeat(2,1fr)}}
     @media(max-width:700px){.container{width:min(100% - 34px,540px)}.nav{height:70px}.brand{font-size:22px}.menu-toggle{display:block}.nav-cta{display:none}.navlinks{display:none;position:absolute;top:70px;left:0;right:0;background:#fbfdfc;padding:18px 25px 24px;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line);gap:20px}.navlinks.open{display:flex}.navlinks a{font-size:12px}.hero{padding:48px 0 55px}.hero-grid{grid-template-columns:1fr;gap:32px}.hero-grid>div:first-child{order:2}.hero-visual{order:1}.hero h1{font-size:52px}.hero-copy{font-size:14px}.hero-visual{min-height:410px}.hero-photo{inset:0 18px 0 18px}.butterfly{right:0}.stats{padding:4px 0 54px}.stats-grid{grid-template-columns:repeat(2,1fr);gap:10px}.stat{padding:20px 8px;border-radius:16px}.stat span{font-size:11px}.intro,.results,.testimonials{padding:68px 0}.about-grid{grid-template-columns:1fr;gap:28px;margin-top:36px}.about-image{height:320px}.about-text h3{font-size:29px}.services{padding:68px 0}.service-grid{grid-template-columns:1fr;gap:12px;margin-top:30px}.service-card{min-height:0;padding:24px}.gallery{grid-template-columns:1fr 1fr;grid-template-rows:210px 160px 160px;gap:9px}.gallery-item:first-child{grid-row:span 2}.benefits{gap:30px 18px}.difference{padding:68px 0}.quote{padding:25px;font-size:18px}.contact{padding:68px 0}.contact-grid{grid-template-columns:1fr;gap:28px}.contact-panel{padding:24px}.footer-inner{flex-direction:column;text-align:center}.footer-links{flex-wrap:wrap;justify-content:center}}
+  
+    /* Refinamento dos cards de números */
+    .stats{padding:8px 0 48px}
+    .stats-grid{gap:12px}
+    .stat{padding:17px 10px;border-radius:16px;background:rgba(255,255,255,.88);border:1px solid #d6ebe7;box-shadow:0 5px 16px rgba(36,127,122,.06)}
+    .stat strong{font-size:clamp(25px,2.8vw,34px);color:#247f7a}
+    .stat span{margin-top:6px;color:#66827e;font-size:11px;letter-spacing:.025em}
+    @media(max-width:700px){
+      .stats{padding:5px 0 38px}
+      .stats-grid{gap:10px}
+      .stat{padding:15px 8px;border-radius:15px}
+      .stat strong{font-size:28px;color:#247f7a}
+      .stat span{font-size:10px;margin-top:5px}
+    }
+
   </style>
 </head>
 <body>
