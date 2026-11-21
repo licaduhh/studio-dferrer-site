@@ -36,9 +36,9 @@ body{background:#FFF9F6!important}.footer{background:#FFF9F6!important;color:#38
 
 /* Identidade floral compartilhada em todas as páginas */
 footer{position:relative;isolation:isolate;overflow:hidden;min-height:250px;padding-bottom:165px!important}
-footer .footer-florals{position:absolute;z-index:0;left:0;right:0;bottom:0;width:100%;height:190px;object-fit:cover;object-position:center bottom;pointer-events:none}
+footer .footer-florals{position:absolute;z-index:0;left:0;right:0;bottom:0;display:block;width:100%;height:auto;max-height:none;object-fit:contain;object-position:center bottom;pointer-events:none}
 footer>*:not(.footer-florals){position:relative;z-index:1}
-@media(max-width:700px){footer{min-height:230px;padding-bottom:145px!important}footer .footer-florals{height:165px}}
+@media(max-width:700px){footer{min-height:230px;padding-bottom:145px!important}footer .footer-florals{position:absolute;z-index:0;left:0;right:0;bottom:0;display:block;width:100%;height:auto;max-height:none;object-fit:contain;object-position:center bottom;pointer-events:none}}
 
 /* Tipografia oficial D’Ferrer — títulos Bodoni Moda; leitura e interface DM Sans */
 :root{--font-display:'Bodoni Moda',Georgia,serif;--font-body:'DM Sans',Arial,sans-serif}
@@ -109,5 +109,5 @@ html body .photo-caption,html body .display-title {
 </nav>
 <footer class="footer">
 <div class="footer-brand">D’FERRER</div><div class="footer-note">OSASCO · SÃO PAULO</div>
-<img class="footer-florals" src="./assets/footer-flores-dferrer.svg" alt="" aria-hidden="true"></footer>
+<img class="footer-florals" src="./assets/4DD34C84-12C2-4023-973A-DBBEC730282A.png" alt="" aria-hidden="true"></footer>
 </main></body></html>
