@@ -408,6 +408,27 @@ body{background:#FFF9F6!important;color:#244B49}
 a:hover{color:#087F79}
 @media(max-width:700px){.navlinks{background:#FFF9F6!important;border-color:#B8E6E1!important}}
 
+
+/* Carrossel do studio e catálogo individual de procedimentos */
+.instagram-work{padding:66px 0 76px;background:linear-gradient(180deg,#FFF9F6 0%,#F7FCFA 100%)!important}
+.instagram-track{padding:12px 4px 24px;gap:16px;scroll-snap-type:x mandatory}
+.instagram-card{flex:0 0 min(310px,82vw);border-radius:22px;border-color:#B8E6E1;box-shadow:0 12px 32px #075F5B12}
+.instagram-card .instagram-media{min-height:380px}
+.service-grid-individual{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:42px}
+.service-grid-individual .service-card{padding:10px;border:1px solid #B8E6E1;border-radius:24px;min-height:0;text-align:left;display:flex;flex-direction:column;background:#fff;box-shadow:0 12px 30px #075F5B0A;overflow:hidden}
+.service-photo-placeholder{height:210px;border-radius:17px;background:linear-gradient(135deg,#B8E6E1 0%,#FFF9F6 48%,#FFD6E5 100%);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;color:#075F5B;position:relative;overflow:hidden}
+.service-photo-placeholder:before,.service-photo-placeholder:after{content:"";position:absolute;border:1px solid #ffffffa8;border-radius:50%;width:190px;height:190px}
+.service-photo-placeholder:after{width:130px;height:130px}
+.service-photo-placeholder span{font:400 34px 'Bodoni Moda',serif;z-index:1}
+.service-photo-placeholder small{font:500 9px 'DM Sans',sans-serif;letter-spacing:.2em;text-transform:uppercase;z-index:1}
+.service-card-content{padding:18px 14px 16px;display:flex;flex-direction:column;align-items:flex-start;flex:1}
+.service-card-content .service-number{font-size:10px;letter-spacing:.12em;color:#8A6577}
+.service-card-content h3{font-size:25px;line-height:1.15;margin:10px 0;color:#075F5B}
+.service-card-content p{font-size:13px;line-height:1.8;color:#71817C;margin:0 0 18px;flex:1}
+.service-card-link{display:inline-flex;align-items:center;justify-content:center;border:1px solid #32C7BE;border-radius:999px;padding:10px 15px;color:#075F5B;font-size:11px;font-weight:700;transition:.2s}
+.service-card-link:hover{background:#B8E6E1}
+@media(max-width:900px){.service-grid-individual{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.service-grid-individual{grid-template-columns:1fr;gap:18px}.service-photo-placeholder{height:235px}.service-card-content{padding:17px 14px 15px}.instagram-work{padding:52px 0}.instagram-card{flex-basis:86vw}.instagram-card .instagram-media{min-height:360px}}
 </style>
 </head>
 <body>
@@ -432,7 +453,32 @@ a:hover{color:#087F79}
     <div class="stat"><strong>25+</strong><span>técnica exclusivas e autorais</span></div>
     <div class="stat"><strong>6+</strong><span>de experiência</span></div>
   </div></section>
-  <section class="intro founder-story" id="studio">
+<section class="instagram-work" id="nosso-trabalho"><div class="container"><div class="section-kicker">Um pouquinho do nosso espaço</div><h2 class="section-title">Conheça o Studio D’Ferrer</h2><p class="section-lead">Um passeio pelos detalhes, atendimentos e momentos do nosso studio.</p><p class="instagram-hint">Deslize para conhecer <span aria-hidden="true">→</span></p><div class="instagram-track">
+  <div class="instagram-card"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DDAyvOgSYX7/" data-instgrm-version="14"></blockquote></div>
+  <div class="instagram-card"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DLpqzuzRls4/" data-instgrm-version="14"></blockquote></div>
+  <div class="instagram-card"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DJRKBraiWb-/" data-instgrm-version="14"></blockquote></div>
+  <div class="instagram-card"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DPw02pEjmnz/" data-instgrm-version="14"></blockquote></div>
+  <div class="instagram-card"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DPh023YDPZO/" data-instgrm-version="14"></blockquote></div>
+  <div class="instagram-card"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DOUEdcADl6x/" data-instgrm-version="14"></blockquote></div>
+</div><a class="instagram-profile-link" href="https://www.instagram.com/studiodferrer/" target="_blank" rel="noopener">Ver mais no Instagram ↗</a></div></section>
+<section class="services" id="servicos"><div class="container center">
+<div class="section-kicker">Nosso menu de beleza</div><h2 class="section-title">Encontre seu próximo momento D’Ferrer.</h2><p class="section-lead">Técnicas autorais, efeitos personalizados e cuidados pensados para realçar sua beleza com delicadeza.</p>
+<div class="service-grid service-grid-individual">
+<article class="service-card service-card-detail"><div class="service-photo-placeholder"><span>01</span><small>Foto em breve</small></div><div class="service-card-content"><div class="service-number">01 · EXTENSÃO DE CÍLIOS</div><h3>Efeito Rímel</h3><p>Um olhar definido e elegante, inspirado no acabamento da máscara de cílios.</p><a class="service-card-link" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener noreferrer">Agendar on-line ↗</a></div></article>
+<article class="service-card service-card-detail"><div class="service-photo-placeholder"><span>02</span><small>Foto em breve</small></div><div class="service-card-content"><div class="service-number">02 · EXTENSÃO DE CÍLIOS</div><h3>Fox Tiffany</h3><p>Um efeito alongado e sofisticado, com desenho que valoriza o canto externo dos olhos.</p><a class="service-card-link" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener noreferrer">Agendar on-line ↗</a></div></article>
+<article class="service-card service-card-detail"><div class="service-photo-placeholder"><span>03</span><small>Foto em breve</small></div><div class="service-card-content"><div class="service-number">03 · EXTENSÃO DE CÍLIOS</div><h3>Hiper Brasileiro</h3><p>Volume marcante e personalizado para destacar o olhar com presença.</p><a class="service-card-link" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener noreferrer">Agendar on-line ↗</a></div></article>
+<article class="service-card service-card-detail"><div class="service-photo-placeholder"><span>04</span><small>Foto em breve</small></div><div class="service-card-content"><div class="service-number">04 · EXTENSÃO DE CÍLIOS</div><h3>Super Fio a Fio</h3><p>Fios aplicados com delicadeza para um resultado definido e harmonioso.</p><a class="service-card-link" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener noreferrer">Agendar on-line ↗</a></div></article>
+<article class="service-card service-card-detail"><div class="service-photo-placeholder"><span>05</span><small>Foto em breve</small></div><div class="service-card-content"><div class="service-number">05 · EXTENSÃO DE CÍLIOS</div><h3>Volume Turquesa</h3><p>Uma técnica autoral D’Ferrer para realçar o olhar com personalidade.</p><a class="service-card-link" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener noreferrer">Agendar on-line ↗</a></div></article>
+<article class="service-card service-card-detail"><div class="service-photo-placeholder"><span>06</span><small>Foto em breve</small></div><div class="service-card-content"><div class="service-number">06 · OUTRAS TÉCNICAS</div><h3>Outros procedimentos</h3><p>Molhado, Angel Eyes, Brasileiro, Egípcio, Safira, Fox, Spikes, Shine, Maldivas e outras possibilidades.</p><a class="service-card-link" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener noreferrer">Agendar on-line ↗</a></div></article>
+<article class="service-card service-card-detail"><div class="service-photo-placeholder"><span>07</span><small>Foto em breve</small></div><div class="service-card-content"><div class="service-number">07 · FIOS NATURAIS</div><h3>Lash Lifting</h3><p>Curvatura e valorização dos seus próprios cílios, realçando a beleza natural do olhar.</p><a class="service-card-link" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener noreferrer">Agendar on-line ↗</a></div></article>
+<article class="service-card service-card-detail"><div class="service-photo-placeholder"><span>08</span><small>Foto em breve</small></div><div class="service-card-content"><div class="service-number">08 · SOBRANCELHAS</div><h3>Design com henna</h3><p>Design personalizado com henna para valorizar o formato e a expressão do rosto.</p><a class="service-card-link" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener noreferrer">Agendar on-line ↗</a></div></article>
+<article class="service-card service-card-detail"><div class="service-photo-placeholder"><span>09</span><small>Foto em breve</small></div><div class="service-card-content"><div class="service-number">09 · SOBRANCELHAS</div><h3>Design com tintura</h3><p>Definição e realce dos fios com tintura, respeitando suas características naturais.</p><a class="service-card-link" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener noreferrer">Agendar on-line ↗</a></div></article>
+<article class="service-card service-card-detail"><div class="service-photo-placeholder"><span>10</span><small>Foto em breve</small></div><div class="service-card-content"><div class="service-number">10 · SOBRANCELHAS</div><h3>Brow Lamination</h3><p>Alinhamento e definição dos fios para sobrancelhas com aparência mais preenchida.</p><a class="service-card-link" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener noreferrer">Agendar on-line ↗</a></div></article>
+<article class="service-card service-card-detail"><div class="service-photo-placeholder"><span>11</span><small>Foto em breve</small></div><div class="service-card-content"><div class="service-number">11 · LÁBIOS</div><h3>Hydra Gloss</h3><p>Cuidado hidratante para revitalizar os lábios e devolver o aspecto saudável e luminoso.</p><a class="service-card-link" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener noreferrer">Agendar on-line ↗</a></div></article>
+<article class="service-card service-card-detail"><div class="service-photo-placeholder"><span>12</span><small>Foto em breve</small></div><div class="service-card-content"><div class="service-number">12 · SOBRANCELHAS</div><h3>Fort Brow</h3><p>Cuidado direcionado aos fios das sobrancelhas, com foco em fortalecimento e aparência mais preenchida.</p><a class="service-card-link" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener noreferrer">Agendar on-line ↗</a></div></article>
+</div><p class="services-note">Cada procedimento é conversado e personalizado de acordo com suas características e o resultado que você deseja.</p><a class="btn service-booking" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener noreferrer">Agendar meu horário ↗</a>
+</div></section>
+<section class="intro founder-story" id="studio">
     <div class="container">
       <div class="section-kicker">A história por trás da D’Ferrer Beauty</div>
       <h2 class="section-title">Quem somos</h2>
@@ -463,21 +509,8 @@ a:hover{color:#087F79}
       </div>
     </div>
   </section>
-  <section class="services" id="servicos"><div class="container center">
-    <div class="section-kicker">Nosso menu de beleza</div>
-    <h2 class="section-title">Encontre seu próximo momento D’Ferrer.</h2>
-    <p class="section-lead">Técnicas autorais, efeitos personalizados e cuidados pensados para realçar sua beleza com delicadeza.</p>
-    <div class="service-grid">
-      <article class="service-card service-card-detail"><div class="service-number">01 · OLHAR</div><h3>Extensão de cílios</h3><p>Do efeito natural ao volume marcante, escolha o estilo que combina com você. Nossa equipe ajuda a encontrar o desenho ideal para o seu olhar.</p><div class="service-tags"><span>Efeito Rímel</span><span>Molhado</span><span>Angel Eyes</span><span>Express Brasileiro</span><span>Express 4D</span><span>Sirena</span><span>Volume Brasileiro</span><span>Egípcio</span><span>Safira</span><span>Fox</span><span>Spikes</span><span>Shine</span><span>Super Fio a Fio</span><span>Fox Tiffany</span><span>Hiper Brasileiro</span><span>Volume Turquesa</span><span>Maldivas</span></div></article>
-      <article class="service-card service-card-detail"><div class="service-number">02 · FIOS NATURAIS</div><h3>Lash Lifting</h3><p>Realce os seus próprios cílios com curvatura e aparência alongada, valorizando a beleza natural do olhar.</p></article>
-      <article class="service-card service-card-detail"><div class="service-number">03 · SOBRANCELHAS</div><h3>Design de sobrancelhas</h3><p>Marcação de simetria e definição respeitando o formato do rosto. Finalizamos com o Spa das Sobrancelhas, com esfoliação, argila, massagem e gel calmante.</p><div class="service-tags"><span>Design simples</span><span>Design com henna</span><span>Design com tintura</span></div></article>
-      <article class="service-card service-card-detail"><div class="service-number">04 · ALINHAMENTO</div><h3>Brow Lamination</h3><p>Técnica que alinha e define os fios, criando um efeito mais preenchido e natural. No catálogo, o procedimento é apresentado com finalização em tintura.</p></article>
-      <article class="service-card service-card-detail"><div class="service-number">05 · LÁBIOS</div><h3>Hydra Gloss</h3><p>Tratamento que revitaliza e hidrata os lábios, suavizando linhas finas ao redor e ajudando a reduzir o ressecamento.</p></article>
-      <article class="service-card service-card-detail"><div class="service-number">06 · CUIDADO COM OS FIOS</div><h3>Fort Brow</h3><p>Tratamento com microagulhamento e sérum para estimular o crescimento dos fios, ajudar a preencher falhas e conquistar sobrancelhas com aparência mais cheia.</p></article>
-    </div>
-    <p class="services-note">Cada procedimento é conversado e personalizado de acordo com suas características e o resultado que você deseja.</p>
-    <a class="btn service-booking" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener noreferrer">Agendar meu horário ↗</a>
-  </div></section>
+  
+  
   <section class="results" id="resultados"><div class="container center"><div class="section-kicker">Beleza em cada detalhe</div><h2 class="section-title">Inspire-se com nossos resultados.</h2><p class="section-lead">Um olhar especial para cada detalhe. Em breve, esta galeria receberá fotos reais dos atendimentos do Studio D’Ferrer.</p>
     <div class="gallery"><div class="gallery-item"><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=900&q=85" alt="Referência de beleza e maquiagem" loading="lazy"><span class="gallery-label">Beleza natural</span></div><div class="gallery-item"><img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=700&q=85" alt="Detalhes de maquiagem" loading="lazy"><span class="gallery-label">Autocuidado</span></div><div class="gallery-item"><img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=700&q=85" alt="Detalhes de beleza" loading="lazy"><span class="gallery-label">Seu momento</span></div><div class="gallery-item"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=700&q=85" alt="Inspiração de beleza" loading="lazy"><span class="gallery-label">Delicadeza</span></div></div>
   </div></section>
@@ -487,14 +520,7 @@ a:hover{color:#087F79}
     <div class="benefit"><div class="benefit-icon">❀</div><h3>Olhar cuidadoso</h3><p>Detalhes e acabamento feitos com dedicação.</p></div>
     <div class="benefit"><div class="benefit-icon">⌁</div><h3>Seu estilo</h3><p>Resultados alinhados ao que faz você se sentir bonita.</p></div>
   </div></div></section>
-  <section class="instagram-work" id="nosso-trabalho"><div class="container"><div class="section-kicker">Um pouquinho do nosso dia a dia</div><h2 class="section-title">Nosso trabalho no Instagram</h2><p class="section-lead">Veja de perto alguns dos resultados e momentos do Studio D’Ferrer.</p><p class="instagram-hint">Arraste para o lado para ver mais <span aria-hidden="true">→</span></p><div class="instagram-track">
-  <div class="instagram-card"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DDAyvOgSYX7/" data-instgrm-version="14"></blockquote></div>
-  <div class="instagram-card"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DLpqzuzRls4/" data-instgrm-version="14"></blockquote></div>
-  <div class="instagram-card"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DJRKBraiWb-/" data-instgrm-version="14"></blockquote></div>
-  <div class="instagram-card"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DPw02pEjmnz/" data-instgrm-version="14"></blockquote></div>
-  <div class="instagram-card"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DPh023YDPZO/" data-instgrm-version="14"></blockquote></div>
-  <div class="instagram-card"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DOUEdcADl6x/" data-instgrm-version="14"></blockquote></div>
-</div><a class="instagram-profile-link" href="https://www.instagram.com/studiodferrer/" target="_blank" rel="noopener">Ver mais no Instagram ↗</a></div></section>
+  
 <section class="testimonials" id="depoimentos"><div class="container"><div class="section-kicker">Experiências D’Ferrer</div><h2 class="section-title">Sua opinião é especial para nós.</h2><p class="section-lead">A melhor forma de conhecer nosso trabalho é conferir o que nossas clientes contam sobre a experiência no Studio D’Ferrer.</p><div class="reviews-grid">
       <article class="review-card"><div class="review-stars" aria-label="5 de 5 estrelas">★★★★★</div><p>“Atendimento maravilhoso, cílios que duram muito + de 30 dias, aplicação impecável, as meninas são atenciosas e te tratam super bem.”</p><strong>Samyra Rosa</strong><small>Avaliação de cliente</small></article>
       <article class="review-card"><div class="review-stars" aria-label="5 de 5 estrelas">★★★★★</div><p>“Lugar aconchegante e as meninas muito atenciosas. Fiz o efeito Fox nos cílios, ficou lindo!”</p><strong>Khamili Victoria Nunes Corrêa</strong><small>Avaliação de cliente</small></article>
