@@ -199,6 +199,20 @@ header{background:rgba(255,249,246,.96)!important;border-color:#B8E6E1!important
 .overview-link{display:inline-flex;gap:9px;align-items:center;color:#087F79;border-bottom:1px solid #B8E6E1;padding-bottom:6px;font:500 13px 'DM Sans',sans-serif}
 @media(max-width:680px){.catalog-overview{padding:44px 0 20px}.overview-heading{margin-bottom:32px}.overview-heading h2{font-size:43px}.overview-heading p{font-size:15px;line-height:1.8}.overview-grid{grid-template-columns:1fr}.overview-card{padding:32px 26px;min-height:0}.overview-number{font-size:22px;margin-bottom:18px}.overview-card h3{font-size:32px}.overview-card p{font-size:15px}.tech-tags{gap:8px}.tech-tags span{font-size:12px;padding:8px 12px}}
 
+
+/* Carrossel de fotos exclusivo do card Lash Lifting */
+.lash-carousel{position:relative;padding:0!important;overflow:hidden;background:#B8E6E1}
+.lash-carousel-track{position:relative;width:100%;height:100%}
+.lash-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:0;transition:opacity .65s ease;pointer-events:none}
+.lash-slide.is-active{opacity:1;pointer-events:auto}
+.lash-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:38px;height:38px;border:1px solid rgba(255,255,255,.85);border-radius:50%;background:rgba(255,249,246,.88);color:#075F5B;font:400 28px/1 'DM Sans',sans-serif;display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 12px #244B4920}
+.lash-prev{left:12px}.lash-next{right:12px}
+.lash-arrow:hover{background:#32C7BE}
+.lash-dots{position:absolute;z-index:2;left:0;right:0;bottom:12px;display:flex;justify-content:center;gap:7px}
+.lash-dot{width:7px;height:7px;padding:0;border:0;border-radius:50%;background:rgba(255,255,255,.68);box-shadow:0 1px 4px #0003;cursor:pointer}
+.lash-dot.is-active{width:20px;border-radius:99px;background:#087F79}
+@media(prefers-reduced-motion:reduce){.lash-slide{transition:none}}
+
 </style>
 </head>
 <body>
@@ -260,7 +274,24 @@ header{background:rgba(255,249,246,.96)!important;border-color:#B8E6E1!important
 <article class="card reveal"><div class="photo photo-placeholder" role="img" aria-label="Foto de Hiper Brasileiro será adicionada"><span class="placeholder-mark">D’F</span><span class="placeholder-name">Foto em breve</span></div><div class="body"><span class="num">12 · CÍLIOS</span><h2>Hiper Brasileiro</h2><p>Uma técnica premium para um resultado de maior destaque.</p><a class="book" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener">Agendar on-line <span>↗</span></a></div></article>
 <article class="card reveal"><div class="photo photo-placeholder" role="img" aria-label="Foto de Super Fio a Fio será adicionada"><span class="placeholder-mark">D’F</span><span class="placeholder-name">Foto em breve</span></div><div class="body"><span class="num">13 · CÍLIOS</span><h2>Super Fio a Fio</h2><p>Uma proposta fio a fio para valorizar os cílios com definição.</p><a class="book" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener">Agendar on-line <span>↗</span></a></div></article>
 <article class="card reveal"><div class="photo photo-placeholder" role="img" aria-label="Foto de Volume Turquesa será adicionada"><span class="placeholder-mark">D’F</span><span class="placeholder-name">Foto em breve</span></div><div class="body"><span class="num">14 · CÍLIOS</span><h2>Volume Turquesa</h2><p>Uma técnica premium com identidade D’Ferrer.</p><a class="book" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener">Agendar on-line <span>↗</span></a></div></article></div>
-<h2 class="section-label" id="lash-lifting" style="margin-top:72px">Cílios naturais</h2><div class="cards"><article class="card reveal"><div class="photo photo-placeholder" role="img" aria-label="Foto de Lash Lifting será adicionada"><span class="placeholder-mark">D’F</span><span class="placeholder-name">Foto em breve</span></div><div class="body"><span class="num">15 · CÍLIOS NATURAIS</span><h2>Lash Lifting</h2><p>Realce os cílios naturais com curvatura e definição, sem aplicação de extensões.</p><a class="book" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener">Agendar on-line <span>↗</span></a></div></article></div>
+<h2 class="section-label" id="lash-lifting" style="margin-top:72px">Cílios naturais</h2><div class="cards"><article class="card reveal"><div class="photo lash-carousel" data-lash-carousel aria-label="Galeria de fotos do Lash Lifting">
+  <div class="lash-carousel-track">
+    <img src="assets/CFA244B0-189B-4E66-85FE-82839F388B9E.png" alt="Lash Lifting — foto 1 de 5" loading="eager" class="lash-slide is-active" >
+    <img src="assets/FFB4CC52-5D05-4BFA-9DE7-01DC971E2241.png" alt="Lash Lifting — foto 2 de 5" loading="lazy" class="lash-slide" aria-hidden="true">
+    <img src="assets/4F33917D-1FE3-4120-9D85-E2113FE6E8E8.png" alt="Lash Lifting — foto 3 de 5" loading="lazy" class="lash-slide" aria-hidden="true">
+    <img src="assets/03C1531E-20A6-4B08-8FCF-9B8209404064.png" alt="Lash Lifting — foto 4 de 5" loading="lazy" class="lash-slide" aria-hidden="true">
+    <img src="assets/5448086A-F5F6-4919-8FFB-C2268089C746.png" alt="Lash Lifting — foto 5 de 5" loading="lazy" class="lash-slide" aria-hidden="true">
+  </div>
+  <button class="lash-arrow lash-prev" type="button" aria-label="Foto anterior">‹</button>
+  <button class="lash-arrow lash-next" type="button" aria-label="Próxima foto">›</button>
+  <div class="lash-dots" aria-label="Selecionar foto">
+    <button type="button" class="lash-dot is-active" aria-label="Mostrar foto 1" aria-current="true"></button>
+    <button type="button" class="lash-dot" aria-label="Mostrar foto 2" aria-current="false"></button>
+    <button type="button" class="lash-dot" aria-label="Mostrar foto 3" aria-current="false"></button>
+    <button type="button" class="lash-dot" aria-label="Mostrar foto 4" aria-current="false"></button>
+    <button type="button" class="lash-dot" aria-label="Mostrar foto 5" aria-current="false"></button>
+  </div>
+</div><div class="body"><span class="num">15 · CÍLIOS NATURAIS</span><h2>Lash Lifting</h2><p>Realce os cílios naturais com curvatura e definição, sem aplicação de extensões.</p><a class="book" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener">Agendar on-line <span>↗</span></a></div></article></div>
 <h2 class="section-label" id="sobrancelhas" style="margin-top:72px">Harmonia · Sobrancelhas</h2><div class="cards"><article class="card reveal"><div class="photo photo-placeholder" role="img" aria-label="Foto de Design de sobrancelhas será adicionada"><span class="placeholder-mark">D’F</span><span class="placeholder-name">Foto em breve</span></div><div class="body"><span class="num">16 · SOBRANCELHAS</span><h2>Design de sobrancelhas</h2><p>Design personalizado para respeitar a harmonia do rosto e valorizar o olhar.</p><a class="book" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener">Agendar on-line <span>↗</span></a></div></article>
 <article class="card reveal"><div class="photo"><img src="assets/9F7C8791-CA98-477B-BB02-971F1E17ECF6.png" alt="Design de sobrancelhas com henna — resultado do procedimento" loading="lazy"></div><div class="body"><span class="num">17 · SOBRANCELHAS</span><h2>Design com henna</h2><p>Design de sobrancelhas com aplicação de henna para realçar o desenho.</p><a class="book" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener">Agendar on-line <span>↗</span></a></div></article>
 <article class="card reveal"><div class="photo photo-placeholder" role="img" aria-label="Foto de Design com tintura será adicionada"><span class="placeholder-mark">D’F</span><span class="placeholder-name">Foto em breve</span></div><div class="body"><span class="num">18 · SOBRANCELHAS</span><h2>Design com tintura</h2><p>Design de sobrancelhas com tintura para destacar e harmonizar os fios.</p><a class="book" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener">Agendar on-line <span>↗</span></a></div></article>
@@ -273,5 +304,39 @@ header{background:rgba(255,249,246,.96)!important;border-color:#B8E6E1!important
 <script>
 const items=document.querySelectorAll('.reveal');
 if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12,rootMargin:'0px 0px -35px 0px'});items.forEach(item=>observer.observe(item))}else{items.forEach(item=>item.classList.add('visible'))}
+
+/* Carrossel Lash Lifting: troca automática e controles laterais */
+document.querySelectorAll('[data-lash-carousel]').forEach(carousel=>{
+  const slides=[...carousel.querySelectorAll('.lash-slide')];
+  const dots=[...carousel.querySelectorAll('.lash-dot')];
+  const prev=carousel.querySelector('.lash-prev');
+  const next=carousel.querySelector('.lash-next');
+  if(slides.length<2)return;
+  let current=0, timer=null;
+  const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function show(index){
+    current=(index+slides.length)%slides.length;
+    slides.forEach((slide,i)=>{
+      slide.classList.toggle('is-active',i===current);
+      if(i===current)slide.removeAttribute('aria-hidden');else slide.setAttribute('aria-hidden','true');
+    });
+    dots.forEach((dot,i)=>{
+      dot.classList.toggle('is-active',i===current);
+      if(i===current)dot.setAttribute('aria-current','true');else dot.removeAttribute('aria-current');
+    });
+  }
+  function stop(){if(timer){clearInterval(timer);timer=null}}
+  function start(){stop();if(!reduced)timer=setInterval(()=>show(current+1),3500)}
+  prev.addEventListener('click',()=>{show(current-1);start()});
+  next.addEventListener('click',()=>{show(current+1);start()});
+  dots.forEach((dot,i)=>dot.addEventListener('click',()=>{show(i);start()}));
+  carousel.addEventListener('mouseenter',stop);
+  carousel.addEventListener('mouseleave',start);
+  carousel.addEventListener('focusin',stop);
+  carousel.addEventListener('focusout',start);
+  document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();else start()});
+  start();
+});
+
 </script>
 </body></html>
