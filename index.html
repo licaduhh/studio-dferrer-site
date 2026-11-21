@@ -59,6 +59,42 @@
  </div>
  <div class="founder-story-note"><span>Beleza com propósito</span><span>Desde 2020</span><span>Osasco · SP</span></div>
 </section>
+<section class="dferrer-courses" aria-labelledby="dferrer-courses-title">
+ <div class="dferrer-courses-inner">
+  <div class="dferrer-courses-heading">
+   <span class="eyebrow">Compartilhando conhecimento</span>
+   <h2 id="dferrer-courses-title">Aprenda com a D’Ferrer</h2>
+   <p>Formações para quem deseja desenvolver suas habilidades e crescer na área da beleza.</p>
+  </div>
+  <div class="dferrer-course-grid">
+   <article class="dferrer-course-card dferrer-course-presential">
+    <div class="dferrer-course-gallery" aria-label="Espaço reservado para o carrossel de fotos das alunas do curso presencial">
+     <div class="dferrer-course-gallery-placeholder"><span class="gallery-mark">D’F</span><strong>Curso presencial</strong><small>Espaço reservado para as fotos das nossas alunas</small><span class="gallery-dots" aria-hidden="true">● ○ ○</span></div>
+    </div>
+    <div class="dferrer-course-content">
+     <span class="dferrer-course-kicker">Formação presencial</span>
+     <h3>Curso presencial</h3>
+     <p>Uma experiência de aprendizado presencial para desenvolver sua técnica com acompanhamento e prática.</p>
+     <a class="dferrer-course-button" href="https://wa.me/5511940507965?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20curso%20presencial%20do%20Studio%20D%E2%80%99Ferrer%20Beauty." target="_blank" rel="noopener">Saiba mais sobre o curso</a>
+    </div>
+   </article>
+   <article class="dferrer-course-card dferrer-course-online">
+    <div class="dferrer-online-art" role="img" aria-label="Arte de apresentação do curso on-line Lash Master Angel">
+     <span class="dferrer-online-small">FORMAÇÃO ON-LINE</span>
+     <span class="dferrer-online-title">Lash Master<br><em>Angel</em></span>
+     <span class="dferrer-online-line"></span>
+     <span class="dferrer-online-caption">Seu próximo passo na beleza</span>
+    </div>
+    <div class="dferrer-course-content">
+     <span class="dferrer-course-kicker">Aprenda no seu ritmo</span>
+     <h3>Curso on-line</h3>
+     <p>Conheça o Lash Master Angel e descubra todos os detalhes da formação on-line.</p>
+     <a class="dferrer-course-button" href="https://lashmasterangel.lovable.app" target="_blank" rel="noopener">Conhecer o curso on-line</a>
+    </div>
+   </article>
+  </div>
+ </div>
+</section>
 <footer class="footer"><img src="assets/dferrer-beauty-logo-transparente.png" alt="D’Ferrer Beauty"><p>Studio D’Ferrer Beauty · Osasco, São Paulo</p><p><a href="https://www.instagram.com/studiodferrer/" target="_blank" rel="noopener">Instagram</a> · <a href="https://wa.me/5511940507965" target="_blank" rel="noopener">WhatsApp</a></p></footer>
 <script>
 (()=>{const slides=[...document.querySelectorAll('.home-slide')],dots=[...document.querySelectorAll('.carousel-dot')];if(!slides.length)return;let current=0,timer;const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;function show(i){current=(i+slides.length)%slides.length;slides.forEach((s,n)=>s.classList.toggle('active',n===current));dots.forEach((d,n)=>d.classList.toggle('active',n===current))}function start(){clearInterval(timer);if(!reduced)timer=setInterval(()=>show(current+1),4500)}document.querySelector('.carousel-prev').addEventListener('click',()=>{show(current-1);start()});document.querySelector('.carousel-next').addEventListener('click',()=>{show(current+1);start()});dots.forEach((d,n)=>d.addEventListener('click',()=>{show(n);start()}));start()})();
