@@ -57,7 +57,7 @@
 
     /* NOVA DIREÇÃO DE ARTE — D'FERRER EDITORIAL LUXURY */
     :root{--teal:#8bada5;--teal-dark:#54776f;--teal-deep:#294c45;--mint:#edf2ed;--paper:#faf8f4;--ink:#302c29;--muted:#817a73;--line:#e8e0d7;--white:#fff;--blush:#eadbd7;--sand:#f3eee7;--gold:#b69a70}
-    body{background:var(--paper);color:var(--ink);font-family:'Manrope',sans-serif;font-size:14px}
+    body{background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif;font-size:14px}
     .container{width:min(1220px,calc(100% - 64px))}
     .topbar{background:rgba(250,248,244,.94);border-bottom:1px solid #e9e1d8}
     .nav{height:88px}
@@ -230,10 +230,10 @@ h1,h2,h3,h4,h5,h6,.section-title,.about-text h3,.service-card h3,.body h2,.secti
     @media(max-width:700px){.founder-grid{grid-template-columns:1fr;gap:28px;margin-top:36px}.founder-portrait,.founder-portrait img{height:350px;min-height:350px}.founder-copy h3{font-size:34px}.founder-copy p{font-size:14px}.founder-highlights{grid-template-columns:repeat(2,1fr);gap:10px;margin-top:34px}.founder-highlight{min-height:108px;padding:18px 10px}.founder-highlight strong{font-size:31px}.founder-highlight span{font-size:10px}}
 
   
-/* SISTEMA TIPOGRAFICO DEFINITIVO — somente Bodoni Moda + DM Sans */
+/* TIPOGRAFIA GLOBAL OFICIAL D'FERRER: somente Bodoni Moda e DM Sans */
 :root{
-  --font-display:'Bodoni Moda',serif;
-  --font-body:'DM Sans',sans-serif;
+  --font-display:'Bodoni Moda', Georgia, serif;
+  --font-body:'DM Sans', Arial, sans-serif;
 }
 html,body,body *{
   font-family:var(--font-body)!important;
@@ -245,145 +245,14 @@ h1,h2,h3,h4,h5,h6,
 .wordmark,.brand,.footer-brand,.signature,
 .founder-highlight strong,.display-title{
   font-family:var(--font-display)!important;
-  font-style:normal!important;
   font-weight:400!important;
-  letter-spacing:-.035em;
 }
-h1,h2,.section-title,.hero h1,.display-title{
-  line-height:1.04;
-}
-h3,h4,h5,h6,.service-card h3,.founder-copy h3{
-  line-height:1.12;
-}
+h1,h2,.section-title,.hero h1,.display-title{line-height:1.04}
+h3,h4,h5,h6,.service-card h3,.founder-copy h3{line-height:1.12}
 p,li,a,button,input,textarea,select,label,small,
 .eyebrow,.section-kicker,.section-label,.tagline,
 .navlinks,.footer-links,.photo-caption,.founder-copy p{
   font-family:var(--font-body)!important;
 }
 
-  </style>
-</head>
-<body>
-<header class="topbar">
-  <div class="container nav">
-    <a class="brand" href="#inicio" aria-label="Studio D’Ferrer início"><span class="brand-mark">D</span><span>D’Ferrer</span></a>
-    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
-    <nav class="navlinks" aria-label="Navegação principal">
-      <a href="#inicio">Início</a><a href="#studio">O Studio</a><a href="procedimentos.html">Procedimentos</a><a href="#resultados">Resultados</a><a href="#depoimentos">Depoimentos</a><a href="#contato">Contato</a>
-    </nav>
-    <a class="btn nav-cta" href="#contato">Agendar horário</a>
-  </div>
-</header>
-<main>
-  <section class="hero" id="inicio"><div class="container hero-grid">
-    <div><div class="eyebrow">Studio D’Ferrer · Osasco · Desde 2020</div><h1>Seu olhar merece <em>esse cuidado.</em></h1><p class="hero-copy">Há 6 anos realçando a beleza e a autoestima de nossas clientes, com delicadeza, técnica e um atendimento pensado especialmente para você.</p><div class="hero-actions"><a class="btn" href="#contato">Agendar meu horário <span>↗</span></a><a class="btn btn-outline" href="procedimentos.html">Ver procedimentos</a></div><div class="hero-note">Beleza em cada detalhe</div></div>
-    <div class="hero-visual"><div class="hero-photo"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1100&q=85" alt="Momento de cuidado e beleza" /></div><div class="photo-caption">Sua beleza, em sua melhor versão.</div><div class="butterfly" aria-hidden="true">✧</div></div>
-  </div></section>
-  <section class="stats" aria-label="Números do Studio D’Ferrer"><div class="container stats-grid">
-    <div class="stat"><strong>9.000+</strong><span>Clientes atendidas</span></div>
-    <div class="stat"><strong>21+</strong><span>Modelos de cílios</span></div>
-    <div class="stat"><strong>6+</strong><span>Anos de experiência</span></div>
-  </div></section>
-  <section class="intro founder-story" id="studio">
-    <div class="container">
-      <div class="section-kicker">A história por trás da D’Ferrer Beauty</div>
-      <h2 class="section-title">Quem somos</h2>
-      <p class="section-lead">Uma história de beleza, propósito e transformação — construída com conhecimento, dedicação e amor por ensinar.</p>
-      <div class="founder-grid">
-        <div class="founder-portrait">
-          <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=1000&q=85" alt="Detalhes do universo da beleza e do autocuidado" loading="lazy">
-          <span>Beleza · Conhecimento · Propósito</span>
-        </div>
-        <div class="founder-copy">
-          <div class="section-kicker">Nossa fundadora</div>
-          <h3>Uma trajetória que transforma vidas.</h3>
-          <p>A D’Ferrer Beauty nasceu de um sonho que se transformou em propósito: transformar vidas por meio da beleza, da educação e da valorização profissional.</p>
-          <p>À frente da marca está <strong>Angélica Ferreira</strong>, empresária, educadora e especialista na área da beleza. Com dedicação, conhecimento e paixão por ensinar, construiu em Osasco um studio reconhecido por seu trabalho e por sua contribuição à formação de novas profissionais.</p>
-          <p>Ao longo dessa jornada, mais de <strong>40 profissionais</strong> já passaram pelo studio. Angélica também formou mais de <strong>200 alunas em cursos presenciais</strong> e mais de <strong>500 alunas no curso on-line</strong>.</p>
-          <p>Sua experiência reúne mais de <strong>20 certificações nacionais e internacionais</strong> e a criação de mais de <strong>6 técnicas próprias</strong>, ensinadas com foco em resultado, segurança e valorização profissional.</p>
-          <p>Mas sua história vai além dos números. Casada, mãe de dois filhos e cristã, Angélica acredita que é possível crescer, empreender e conquistar liberdade profissional sem abrir mão da família, dos valores e do propósito.</p>
-          <p>Hoje, sua missão é ajudar mulheres a viverem da beleza com confiança, técnica e liberdade.</p>
-          <div class="signature">D’Ferrer Beauty — beleza com propósito.</div>
-        </div>
-      </div>
-      <div class="founder-highlights" aria-label="Conquistas da fundadora">
-        <div class="founder-highlight"><strong>200+</strong><span>Alunas formadas presencialmente</span></div>
-        <div class="founder-highlight"><strong>500+</strong><span>Alunas no curso on-line</span></div>
-        <div class="founder-highlight"><strong>40+</strong><span>Profissionais que passaram pelo studio</span></div>
-        <div class="founder-highlight"><strong>6+</strong><span>Técnicas próprias desenvolvidas</span></div>
-        <div class="founder-highlight"><strong>20+</strong><span>Certificações nacionais e internacionais</span></div>
-      </div>
-    </div>
-  </section>
-  <section class="services" id="servicos"><div class="container center"><div class="section-kicker">Nossos cuidados</div><h2 class="section-title">Encontre seu momento de beleza.</h2><p class="section-lead">Serviços pensados para valorizar seus traços e deixar sua rotina mais prática.</p>
-    <div class="service-grid">
-      <article class="service-card"><div class="service-number">01</div><h3>Extensão de cílios</h3><p>Realce para o olhar com técnicas que respeitam seu estilo e o efeito que você deseja.</p></article>
-      <article class="service-card"><div class="service-number">02</div><h3>Lash Lifting</h3><p>Curvatura e destaque para os fios naturais, com um visual leve e delicado.</p></article>
-      <article class="service-card"><div class="service-number">03</div><h3>Design de sobrancelhas</h3><p>Harmonia e definição respeitando o formato do seu rosto e suas características.</p></article>
-      <article class="service-card"><div class="service-number">04</div><h3>Brow Lamination</h3><p>Alinhamento dos fios para sobrancelhas com aparência mais preenchida e organizada.</p></article>
-      <article class="service-card"><div class="service-number">05</div><h3>Hydra Gloss</h3><p>Um cuidado especial para realçar a aparência dos lábios e completar sua beleza.</p></article>
-      <article class="service-card"><div class="service-number">06</div><h3>Atendimento personalizado</h3><p>Uma conversa antes de cada procedimento para entender o que faz sentido para você.</p></article>
-    </div>
-  </div></section>
-  <section class="results" id="resultados"><div class="container center"><div class="section-kicker">Beleza em cada detalhe</div><h2 class="section-title">Inspire-se com nossos resultados.</h2><p class="section-lead">Um olhar especial para cada detalhe. Em breve, esta galeria receberá fotos reais dos atendimentos do Studio D’Ferrer.</p>
-    <div class="gallery"><div class="gallery-item"><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=900&q=85" alt="Referência de beleza e maquiagem" loading="lazy"><span class="gallery-label">Beleza natural</span></div><div class="gallery-item"><img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=700&q=85" alt="Detalhes de maquiagem" loading="lazy"><span class="gallery-label">Autocuidado</span></div><div class="gallery-item"><img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=700&q=85" alt="Detalhes de beleza" loading="lazy"><span class="gallery-label">Seu momento</span></div><div class="gallery-item"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=700&q=85" alt="Inspiração de beleza" loading="lazy"><span class="gallery-label">Delicadeza</span></div></div>
-  </div></section>
-  <section class="difference"><div class="container center"><div class="section-kicker">Sua experiência</div><h2 class="section-title">Você merece se sentir bem.</h2><div class="benefits">
-    <div class="benefit"><div class="benefit-icon">♡</div><h3>Atendimento próximo</h3><p>Atenção às suas preferências em cada etapa.</p></div>
-    <div class="benefit"><div class="benefit-icon">✧</div><h3>Conforto</h3><p>Um ambiente preparado para sua pausa de autocuidado.</p></div>
-    <div class="benefit"><div class="benefit-icon">❀</div><h3>Olhar cuidadoso</h3><p>Detalhes e acabamento feitos com dedicação.</p></div>
-    <div class="benefit"><div class="benefit-icon">⌁</div><h3>Seu estilo</h3><p>Resultados alinhados ao que faz você se sentir bonita.</p></div>
-  </div></div></section>
-  <section class="instagram-work" id="nosso-trabalho"><div class="container"><div class="section-kicker">Um pouquinho do nosso dia a dia</div><h2 class="section-title">Nosso trabalho no Instagram</h2><p class="section-lead">Veja de perto alguns dos resultados e momentos do Studio D’Ferrer.</p><p class="instagram-hint">Arraste para o lado para ver mais <span aria-hidden="true">→</span></p><div class="instagram-track">
-  <div class="instagram-card"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DDAyvOgSYX7/" data-instgrm-version="14"></blockquote></div>
-  <div class="instagram-card"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DLpqzuzRls4/" data-instgrm-version="14"></blockquote></div>
-  <div class="instagram-card"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DJRKBraiWb-/" data-instgrm-version="14"></blockquote></div>
-  <div class="instagram-card"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DPw02pEjmnz/" data-instgrm-version="14"></blockquote></div>
-  <div class="instagram-card"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DPh023YDPZO/" data-instgrm-version="14"></blockquote></div>
-  <div class="instagram-card"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DOUEdcADl6x/" data-instgrm-version="14"></blockquote></div>
-</div><a class="instagram-profile-link" href="https://www.instagram.com/studiodferrer/" target="_blank" rel="noopener">Ver mais no Instagram ↗</a></div></section>
-<section class="testimonials" id="depoimentos"><div class="container"><div class="section-kicker">Experiências D’Ferrer</div><h2 class="section-title">Sua opinião é especial para nós.</h2><p class="section-lead">A melhor forma de conhecer nosso trabalho é conferir o que nossas clientes contam sobre a experiência no Studio D’Ferrer.</p><div class="reviews-grid">
-      <article class="review-card"><div class="review-stars" aria-label="5 de 5 estrelas">★★★★★</div><p>“Atendimento maravilhoso, cílios que duram muito + de 30 dias, aplicação impecável, as meninas são atenciosas e te tratam super bem.”</p><strong>Samyra Rosa</strong><small>Avaliação de cliente</small></article>
-      <article class="review-card"><div class="review-stars" aria-label="5 de 5 estrelas">★★★★★</div><p>“Lugar aconchegante e as meninas muito atenciosas. Fiz o efeito Fox nos cílios, ficou lindo!”</p><strong>Khamili Victoria Nunes Corrêa</strong><small>Avaliação de cliente</small></article>
-      <article class="review-card"><div class="review-stars" aria-label="5 de 5 estrelas">★★★★★</div><p>“Além de sempre aumentar a autoestima com esses cílios maravilhosos, o atendimento é muito bom (sempre). A atenção dada durante o procedimento, o cuidado e etc. Os cílios são perfeitos e ainda são à prova d’água, não precisamos esperar para secar, além de serem cheinhos. Recomendo super.”</p><strong>Camila de Col Aramaki</strong><small>Avaliação de cliente</small></article>
-      <article class="review-card"><div class="review-stars" aria-label="5 de 5 estrelas">★★★★★</div><p>“Já sou cliente há mais de 2 anos. Espaço perfeito!! Profissionais qualificadas, meus cílios sempre saem perfeitos e duram mais de 30 dias! Recomendo de olhos fechados.”</p><strong>Marcia Ferreira</strong><small>Avaliação de cliente</small></article>
-      <article class="review-card"><div class="review-stars" aria-label="5 de 5 estrelas">★★★★★</div><p>“O Studio D’Ferrer é um lugar encantador. As meninas são uns amores, te deixam à vontade. Adoro fazer com elas, super indico.”</p><strong>Camila Jamarino</strong><small>Avaliação de cliente</small></article>
-      <article class="review-card"><div class="review-stars" aria-label="5 de 5 estrelas">★★★★★</div><p>“É uma ótima clínica, além de linda muito acolhedora, eu gostei muito do procedimento que eu fiz, tudo muito organizado e limpo... Parabéns para todos que trabalham lá.. Eu recomendo..”</p><strong>Ana Kátia Silva</strong><small>Avaliação de cliente</small></article>
-      <article class="review-card"><div class="review-stars" aria-label="5 de 5 estrelas">★★★★★</div><p>“O Studio D’Ferrer é simplesmente excepcional. A equipe é composta por profissionais extremamente competentes e atenciosas, sempre prontas para oferecer um atendimento de alta qualidade. O trabalho realizado é impecável em todos os detalhes. A estrutura do espaço é acolhedora, bem planejada e proporciona uma experiência muito agradável. Sem dúvida, é um lugar único.”</p><strong>Cristiane Soares Barreto</strong><small>Avaliação de cliente</small></article>
-      <article class="review-card"><div class="review-stars" aria-label="5 de 5 estrelas">★★★★★</div><p>“Os cílios ficaram muito lindos, bem naturais do jeito que eu gosto. Fui bem atendida, com certeza voltarei mais vezes.”</p><strong>Nicole Martins Silva</strong><small>Avaliação de cliente</small></article>
-    </div>
-    </div></section>
-  <section class="contact" id="contato"><div class="container contact-grid"><div class="contact-copy"><div class="section-kicker">Vamos marcar seu momento?</div><h2 class="section-title">Seu próximo cuidado começa aqui.</h2><p>Entre em contato para consultar horários disponíveis e escolher o serviço ideal para você. Estamos em Osasco, São Paulo.</p><a class="btn" href="https://www.instagram.com/studiodferrer/" target="_blank" rel="noopener">Falar pelo Instagram ↗</a></div>
-    <div class="contact-panel"><div class="contact-row"><div class="contact-icon">⌖</div><div><strong>Endereço</strong><span>Av. Analice Sakatauskas, 310, sala 8<br>Bela Vista · Osasco/SP</span><br><a href="https://www.google.com/maps/search/?api=1&query=Av.%20Analice%20Sakatauskas%2C%20310%2C%20sala%208%2C%20Bela%20Vista%2C%20Osasco%20SP" target="_blank" rel="noopener" style="display:inline-block;margin-top:8px;color:var(--teal-dark);font-size:12px;font-weight:700">Como chegar ↗</a></div></div><div class="contact-row"><div class="contact-icon">◎</div><div><strong>Instagram</strong><span><a href="https://www.instagram.com/studiodferrer/" target="_blank" rel="noopener">@studiodferrer</a></span></div></div><div class="contact-row"><div class="contact-icon">◷</div><div><strong>Agendamento</strong><span>Consulte disponibilidade pelo Instagram</span></div></div></div>
-  </div></section>
-</main>
-<dialog class="wa-modal" id="whatsappModal" aria-labelledby="waTitle"><div class="wa-modal-head"><div><h2 id="waTitle">Agendar no WhatsApp</h2><p>Studio D’Ferrer · Osasco</p></div><button class="wa-close" type="button" aria-label="Fechar">×</button></div><form class="wa-form" id="whatsappForm"><p class="wa-form-intro">Preencha os dados abaixo e sua mensagem ficará pronta para enviar ao nosso WhatsApp.</p><label class="wa-field"><span>Nome *</span><input name="nome" required placeholder="Seu nome" autocomplete="name"></label><label class="wa-field"><span>Telefone / WhatsApp</span><input name="telefone" type="tel" placeholder="(11) 90000-0000"></label><label class="wa-field"><span>E-mail</span><input name="email" type="email" placeholder="seuemail@exemplo.com"></label><label class="wa-field"><span>Serviço desejado *</span><select name="servico" required><option value="">Selecione...</option><option>Extensão de cílios</option><option>Lash Lifting</option><option>Design de sobrancelhas</option><option>Brow Lamination</option><option>Hydra Gloss</option><option>Gostaria de orientação</option></select></label><label class="wa-field"><span>Melhor dia e horário</span><input name="horario" placeholder="Ex.: sábado de manhã"></label><label class="wa-field"><span>Observação</span><textarea name="observacao" placeholder="Algo que queira contar antes?"></textarea></label><button class="wa-submit" type="submit">Enviar no WhatsApp →</button><p class="wa-privacy">O WhatsApp abrirá com a mensagem preenchida para você enviar.</p></form></dialog><button class="whatsapp-float" id="openWhatsapp" type="button" aria-label="Agendar pelo WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3A13 13 0 0 0 4.8 22.6L3 29l6.6-1.7A13 13 0 1 0 16 3Zm0 23.5a10.5 10.5 0 0 1-5.4-1.5l-.4-.2-4 1 1.1-3.9-.3-.4A10.5 10.5 0 1 1 16 26.5Zm5.8-7.8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.1l-1 1.2c-.2.2-.4.2-.7.1a8.5 8.5 0 0 1-2.5-1.6 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.4.3-.5.1-.2 0-.4 0-.6l-1-2.4c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1.1-1 2.6 1.1 3 1.3 3.2c.1.2 2.2 3.4 5.4 4.8.8.3 1.4.5 1.8.6.8.2 1.5.2 2 .1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.3Z"/></svg>Agendar no WhatsApp</button><footer class="footer">
-  <div class="container footer-inner">
-    <p>© <span id="year"></span> Studio D’Ferrer. Todos os direitos reservados.</p>
-    <div class="footer-links"><a href="#servicos">Serviços</a><a href="#contato">Contato</a><a href="https://www.instagram.com/studiodferrer/" target="_blank" rel="noopener">Instagram</a></div>
-  </div>
-<img class="footer-florals" src="data:image/jpeg;base64,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" alt="" aria-hidden="true">
-</footer>
-<script>
-  const instagramEmbed=document.createElement("script");
-  instagramEmbed.async=true;
-  instagramEmbed.src="https://www.instagram.com/embed.js";
-  instagramEmbed.onload=()=>{if(window.instgrm?.Embeds?.process)window.instgrm.Embeds.process()};
-  document.body.appendChild(instagramEmbed);
-  const toggle=document.querySelector('.menu-toggle');const nav=document.querySelector('.navlinks');
-  toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'×':'☰'});
-  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰'}));
-  const waModal=document.getElementById('whatsappModal');
-  document.getElementById('openWhatsapp').addEventListener('click',()=>waModal.showModal());
-  waModal.querySelector('.wa-close').addEventListener('click',()=>waModal.close());
-  waModal.addEventListener('click',e=>{if(e.target===waModal)waModal.close()});
-  document.getElementById('whatsappForm').addEventListener('submit',e=>{
-    e.preventDefault();const d=new FormData(e.currentTarget);
-    const rows=[['Nome',d.get('nome')],['Telefone / WhatsApp',d.get('telefone')],['E-mail',d.get('email')],['Serviço desejado',d.get('servico')],['Melhor dia e horário',d.get('horario')],['Observação',d.get('observacao')]];
-    const msg='Olá! Gostaria de agendar um horário no Studio D’Ferrer.\n\n'+rows.filter(([,v])=>String(v||'').trim()).map(([k,v])=>k+': '+String(v).trim()).join('\n');
-    window.open('https://wa.me/5511940507965?text='+encodeURIComponent(msg),'_blank','noopener');waModal.close();
-  });
-  document.getElementById('year').textContent=new Date().getFullYear();
-</script>
-</body>
-</html>
+
