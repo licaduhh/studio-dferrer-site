@@ -187,6 +187,21 @@
       .whatsapp-float{right:12px;bottom:12px;padding:13px 15px;font-size:9px}
     }
 
+
+    /* Rodapé compacto: flores mais próximas e sem marca duplicada */
+    html, body { overscroll-behavior-y: none; }
+    .footer{position:relative;isolation:isolate;overflow:hidden;min-height:300px;padding:34px 0 0;background:#e8f6f3;color:#54776f}
+    .footer-inner{position:relative;z-index:2;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;text-align:center;padding-bottom:178px}
+    .footer .brand{display:none}
+    .footer p{margin:0;color:#668b84;font-size:11px;letter-spacing:.04em}
+    .footer-links{justify-content:center;color:#54776f;font-size:11px}
+    .footer-florals{position:absolute;z-index:1;left:0;right:0;bottom:-2px;width:100%;height:190px;pointer-events:none}
+    @media(max-width:700px){
+      .footer{min-height:270px;padding-top:26px}
+      .footer-inner{padding-bottom:150px;gap:10px}
+      .footer-florals{height:160px}
+    }
+
 </style>
 </head>
 <body>
@@ -255,7 +270,24 @@
     <div class="contact-panel"><div class="contact-row"><div class="contact-icon">⌖</div><div><strong>Endereço</strong><span>Av. Analice Sakatauskas, 310, sala 8<br>Bela Vista · Osasco/SP</span><br><a href="https://www.google.com/maps/search/?api=1&query=Av.%20Analice%20Sakatauskas%2C%20310%2C%20sala%208%2C%20Bela%20Vista%2C%20Osasco%20SP" target="_blank" rel="noopener" style="display:inline-block;margin-top:8px;color:var(--teal-dark);font-size:12px;font-weight:700">Como chegar ↗</a></div></div><div class="contact-row"><div class="contact-icon">◎</div><div><strong>Instagram</strong><span><a href="https://www.instagram.com/studiodferrer/" target="_blank" rel="noopener">@studiodferrer</a></span></div></div><div class="contact-row"><div class="contact-icon">◷</div><div><strong>Agendamento</strong><span>Consulte disponibilidade pelo Instagram</span></div></div></div>
   </div></section>
 </main>
-<dialog class="wa-modal" id="whatsappModal" aria-labelledby="waTitle"><div class="wa-modal-head"><div><h2 id="waTitle">Agendar no WhatsApp</h2><p>Studio D’Ferrer · Osasco</p></div><button class="wa-close" type="button" aria-label="Fechar">×</button></div><form class="wa-form" id="whatsappForm"><p class="wa-form-intro">Preencha os dados abaixo e sua mensagem ficará pronta para enviar ao nosso WhatsApp.</p><label class="wa-field"><span>Nome *</span><input name="nome" required placeholder="Seu nome" autocomplete="name"></label><label class="wa-field"><span>Telefone / WhatsApp</span><input name="telefone" type="tel" placeholder="(11) 90000-0000"></label><label class="wa-field"><span>E-mail</span><input name="email" type="email" placeholder="seuemail@exemplo.com"></label><label class="wa-field"><span>Serviço desejado *</span><select name="servico" required><option value="">Selecione...</option><option>Extensão de cílios</option><option>Lash Lifting</option><option>Design de sobrancelhas</option><option>Brow Lamination</option><option>Hydra Gloss</option><option>Gostaria de orientação</option></select></label><label class="wa-field"><span>Melhor dia e horário</span><input name="horario" placeholder="Ex.: sábado de manhã"></label><label class="wa-field"><span>Observação</span><textarea name="observacao" placeholder="Algo que queira contar antes?"></textarea></label><button class="wa-submit" type="submit">Enviar no WhatsApp →</button><p class="wa-privacy">O WhatsApp abrirá com a mensagem preenchida para você enviar.</p></form></dialog><button class="whatsapp-float" id="openWhatsapp" type="button" aria-label="Agendar pelo WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3A13 13 0 0 0 4.8 22.6L3 29l6.6-1.7A13 13 0 1 0 16 3Zm0 23.5a10.5 10.5 0 0 1-5.4-1.5l-.4-.2-4 1 1.1-3.9-.3-.4A10.5 10.5 0 1 1 16 26.5Zm5.8-7.8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.1l-1 1.2c-.2.2-.4.2-.7.1a8.5 8.5 0 0 1-2.5-1.6 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.4.3-.5.1-.2 0-.4 0-.6l-1-2.4c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1.1-1 2.6 1.1 3 1.3 3.2c.1.2 2.2 3.4 5.4 4.8.8.3 1.4.5 1.8.6.8.2 1.5.2 2 .1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.3Z"/></svg>Agendar no WhatsApp</button><footer class="footer"><div class="container footer-inner"><a class="brand" href="#inicio"><span class="brand-mark">D</span><span>D’Ferrer</span></a><p>© <span id="year"></span> Studio D’Ferrer. Todos os direitos reservados.</p><div class="footer-links"><a href="#servicos">Serviços</a><a href="#contato">Contato</a><a href="https://www.instagram.com/studiodferrer/" target="_blank" rel="noopener">Instagram</a></div></div></footer>
+<dialog class="wa-modal" id="whatsappModal" aria-labelledby="waTitle"><div class="wa-modal-head"><div><h2 id="waTitle">Agendar no WhatsApp</h2><p>Studio D’Ferrer · Osasco</p></div><button class="wa-close" type="button" aria-label="Fechar">×</button></div><form class="wa-form" id="whatsappForm"><p class="wa-form-intro">Preencha os dados abaixo e sua mensagem ficará pronta para enviar ao nosso WhatsApp.</p><label class="wa-field"><span>Nome *</span><input name="nome" required placeholder="Seu nome" autocomplete="name"></label><label class="wa-field"><span>Telefone / WhatsApp</span><input name="telefone" type="tel" placeholder="(11) 90000-0000"></label><label class="wa-field"><span>E-mail</span><input name="email" type="email" placeholder="seuemail@exemplo.com"></label><label class="wa-field"><span>Serviço desejado *</span><select name="servico" required><option value="">Selecione...</option><option>Extensão de cílios</option><option>Lash Lifting</option><option>Design de sobrancelhas</option><option>Brow Lamination</option><option>Hydra Gloss</option><option>Gostaria de orientação</option></select></label><label class="wa-field"><span>Melhor dia e horário</span><input name="horario" placeholder="Ex.: sábado de manhã"></label><label class="wa-field"><span>Observação</span><textarea name="observacao" placeholder="Algo que queira contar antes?"></textarea></label><button class="wa-submit" type="submit">Enviar no WhatsApp →</button><p class="wa-privacy">O WhatsApp abrirá com a mensagem preenchida para você enviar.</p></form></dialog><button class="whatsapp-float" id="openWhatsapp" type="button" aria-label="Agendar pelo WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3A13 13 0 0 0 4.8 22.6L3 29l6.6-1.7A13 13 0 1 0 16 3Zm0 23.5a10.5 10.5 0 0 1-5.4-1.5l-.4-.2-4 1 1.1-3.9-.3-.4A10.5 10.5 0 1 1 16 26.5Zm5.8-7.8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.1l-1 1.2c-.2.2-.4.2-.7.1a8.5 8.5 0 0 1-2.5-1.6 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.4.3-.5.1-.2 0-.4 0-.6l-1-2.4c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1.1-1 2.6 1.1 3 1.3 3.2c.1.2 2.2 3.4 5.4 4.8.8.3 1.4.5 1.8.6.8.2 1.5.2 2 .1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.3Z"/></svg>Agendar no WhatsApp</button><footer class="footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Studio D’Ferrer. Todos os direitos reservados.</p>
+    <div class="footer-links"><a href="#servicos">Serviços</a><a href="#contato">Contato</a><a href="https://www.instagram.com/studiodferrer/" target="_blank" rel="noopener">Instagram</a></div>
+  </div>
+  <svg class="footer-florals" viewBox="0 0 709 190" preserveAspectRatio="xMidYMax slice" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <g fill="#a8dcd4" fill-opacity=".78" stroke="#78c4b9" stroke-width="2">
+      <g transform="translate(92 55)"><ellipse cy="-28" rx="16" ry="34"/><ellipse cx="29" cy="-7" rx="16" ry="34" transform="rotate(72 29 -7)"/><ellipse cx="18" cy="25" rx="16" ry="34" transform="rotate(144 18 25)"/><ellipse cx="-18" cy="25" rx="16" ry="34" transform="rotate(216 -18 25)"/><ellipse cx="-29" cy="-7" rx="16" ry="34" transform="rotate(288 -29 -7)"/><circle r="8" fill="#c4bd8b" stroke="none"/></g>
+      <g transform="translate(610 55)"><ellipse cy="-28" rx="16" ry="34"/><ellipse cx="29" cy="-7" rx="16" ry="34" transform="rotate(72 29 -7)"/><ellipse cx="18" cy="25" rx="16" ry="34" transform="rotate(144 18 25)"/><ellipse cx="-18" cy="25" rx="16" ry="34" transform="rotate(216 -18 25)"/><ellipse cx="-29" cy="-7" rx="16" ry="34" transform="rotate(288 -29 -7)"/><circle r="8" fill="#c4bd8b" stroke="none"/></g>
+      <g transform="translate(355 128) scale(.55)"><ellipse cy="-28" rx="16" ry="34"/><ellipse cx="29" cy="-7" rx="16" ry="34" transform="rotate(72 29 -7)"/><ellipse cx="18" cy="25" rx="16" ry="34" transform="rotate(144 18 25)"/><ellipse cx="-18" cy="25" rx="16" ry="34" transform="rotate(216 -18 25)"/><ellipse cx="-29" cy="-7" rx="16" ry="34" transform="rotate(288 -29 -7)"/><circle r="8" fill="#c4bd8b" stroke="none"/></g>
+    </g>
+    <g fill="none" stroke="#78c4b9" stroke-width="3" stroke-linecap="round">
+      <path d="M45 190 Q58 105 92 55 M67 190 Q112 113 145 120 M664 190 Q650 105 610 55 M642 190 Q598 113 565 120 M345 190 Q352 150 355 128"/>
+      <path d="M45 150 Q70 150 84 170 M664 150 Q638 150 624 170 M345 168 Q320 160 300 145"/>
+    </g>
+    <g fill="#b6e5de" stroke="#78c4b9" stroke-width="1.5"><circle cx="53" cy="135" r="5"/><circle cx="73" cy="112" r="4"/><circle cx="655" cy="135" r="5"/><circle cx="635" cy="112" r="4"/><circle cx="300" cy="145" r="4"/></g>
+  </svg>
+</footer>
 <script>
   const instagramEmbed=document.createElement("script");
   instagramEmbed.async=true;
