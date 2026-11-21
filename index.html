@@ -78,7 +78,15 @@
  <div class="brow-lamination-dots" aria-label="Selecionar foto"><button type="button" class="brow-lamination-dot active" aria-label="Mostrar foto 1" data-index="0"></button><button type="button" class="brow-lamination-dot" aria-label="Mostrar foto 2" data-index="1"></button><button type="button" class="brow-lamination-dot" aria-label="Mostrar foto 3" data-index="2"></button><button type="button" class="brow-lamination-dot" aria-label="Mostrar foto 4" data-index="3"></button></div>
 </div><div class="procedure-copy"><span class="procedure-index">Sobrancelhas</span><h3>Brow Lamination</h3><p>Técnica que alinha e define as sobrancelhas, criando um efeito preenchido e natural. Depois, é aplicada tintura. O procedimento dura cerca de 1h30 e o resultado dura aproximadamente 30 dias.</p><a class="procedure-book" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener">Agendar on-line</a></div></article>
 </div></div>
-<div class="home-category"><h3>Lábios</h3><div class="procedure-grid"><article class="procedure-card"><div class="procedure-photo no-image">D’F</div><div class="procedure-copy"><span class="procedure-index">Lábios</span><h3>Hydra Gloss</h3><p>Tratamento que revitaliza e hidrata os lábios, suavizando linhas finas ao redor e eliminando o ressecamento, deixando-os mais macios e rejuvenescidos.</p><a class="procedure-book" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener">Agendar on-line</a></div></article></div></div>
+<div class="home-category"><h3>Lábios</h3><div class="procedure-grid"><article class="procedure-card"><div class="procedure-photo hydra-gloss-carousel" aria-label="Carrossel de fotos do Hydra Gloss">
+ <div class="hydra-gloss-track">
+  <div class="hydra-gloss-slide active"><img src="assets/5AC16392-1C1D-4566-BB4D-CF7FDFF17A43.png" alt="Hydra Gloss — resultado do procedimento 1" loading="eager"></div>
+  <div class="hydra-gloss-slide"><img src="assets/IMG_1071.jpeg" alt="Hydra Gloss — resultado do procedimento 2" loading="lazy"></div>
+ </div>
+ <button class="hydra-gloss-arrow hydra-gloss-prev" type="button" aria-label="Foto anterior">‹</button>
+ <button class="hydra-gloss-arrow hydra-gloss-next" type="button" aria-label="Próxima foto">›</button>
+ <div class="hydra-gloss-count" aria-live="polite">1 / 2</div>
+</div><div class="procedure-copy"><span class="procedure-index">Lábios</span><h3>Hydra Gloss</h3><p>Tratamento que revitaliza e hidrata os lábios, suavizando linhas finas ao redor e eliminando o ressecamento, deixando-os mais macios e rejuvenescidos.</p><a class="procedure-book" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener">Agendar on-line</a></div></article></div></div>
 <div class="actions" style="margin-top:42px"><a class="btn" href="procedimentos.html">Ver todos os procedimentos</a></div>
 </div></section>
 
@@ -288,5 +296,9 @@
 
 <script>
 (() => { const root=document.querySelector('.design-simples-carousel'); if(!root)return; const slides=[...root.querySelectorAll('.design-simples-slide')]; const count=root.querySelector('.design-simples-count'); let current=0; const show=(n)=>{current=(n+slides.length)%slides.length;slides.forEach((s,i)=>s.classList.toggle('active',i===current));count.textContent=(current+1)+' / '+slides.length;}; root.querySelector('.design-simples-prev').addEventListener('click',()=>show(current-1)); root.querySelector('.design-simples-next').addEventListener('click',()=>show(current+1)); })();
+</script>
+
+<script>
+(() => { const root=document.querySelector('.hydra-gloss-carousel'); if(!root)return; const slides=[...root.querySelectorAll('.hydra-gloss-slide')]; const count=root.querySelector('.hydra-gloss-count'); let current=0; const show=(n)=>{current=(n+slides.length)%slides.length;slides.forEach((s,i)=>s.classList.toggle('active',i===current));count.textContent=(current+1)+' / '+slides.length;}; root.querySelector('.hydra-gloss-prev').addEventListener('click',()=>show(current-1)); root.querySelector('.hydra-gloss-next').addEventListener('click',()=>show(current+1)); })();
 </script>
 </body></html>
