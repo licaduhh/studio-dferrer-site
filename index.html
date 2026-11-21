@@ -378,7 +378,8 @@ p,li,a,button,input,textarea,select,label,small,
       <article class="review-card"><div class="review-stars" aria-label="5 de 5 estrelas">★★★★★</div><p>“Os cílios ficaram muito lindos, bem naturais do jeito que eu gosto. Fui bem atendida, com certeza voltarei mais vezes.”</p><strong>Nicole Martins Silva</strong><small>Avaliação de cliente</small></article>
     </div>
     </div></section>
-  <section class="contact" id="contato"><div class="container contact-grid"><div class="contact-copy"><div class="section-kicker">Vamos marcar seu momento?</div><h2 class="section-title">Seu próximo cuidado começa aqui.</h2><p>Entre em contato para consultar horários disponíveis e escolher o serviço ideal para você. Estamos em Osasco, São Paulo.</p><a class="btn" href="https://www.instagram.com/studiodferrer/" target="_blank" rel="noopener">Falar pelo Instagram ↗</a></div>
+  <section class="contact" id="contato"><div class="container contact-grid"><div class="contact-copy"><div class="section-kicker">Vamos marcar seu momento?</div><h2 class="section-title">Seu próximo cuidado começa aqui.</h2><p>Entre em contato para consultar horários disponíveis e escolher o serviço ideal para você. Estamos em Osasco, São Paulo.</p><a class="btn" href="https://www.instagram.com/studiodferrer/" target="_blank" rel="noopener">Falar pelo Instagram ↗</a>
+        <button class="btn btn-outline" type="button" id="openOnlineBooking">Agendar on-line</button></div>
     <div class="contact-panel"><div class="contact-row"><div class="contact-icon">⌖</div><div><strong>Endereço</strong><span>Av. Analice Sakatauskas, 310, sala 8<br>Bela Vista · Osasco/SP</span><br><a href="https://www.google.com/maps/search/?api=1&query=Av.%20Analice%20Sakatauskas%2C%20310%2C%20sala%208%2C%20Bela%20Vista%2C%20Osasco%20SP" target="_blank" rel="noopener" style="display:inline-block;margin-top:8px;color:var(--teal-dark);font-size:12px;font-weight:700">Como chegar ↗</a></div></div><div class="contact-row"><div class="contact-icon">◎</div><div><strong>Instagram</strong><span><a href="https://www.instagram.com/studiodferrer/" target="_blank" rel="noopener">@studiodferrer</a></span></div></div><div class="contact-row"><div class="contact-icon">◷</div><div><strong>Agendamento</strong><span>Consulte disponibilidade pelo Instagram</span></div></div></div>
   </div></section>
 </main>
@@ -399,6 +400,7 @@ p,li,a,button,input,textarea,select,label,small,
   toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'×':'☰'});
   nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰'}));
   const waModal=document.getElementById('whatsappModal');
+  document.getElementById('openOnlineBooking').addEventListener('click',()=>waModal.showModal());
   document.getElementById('openWhatsapp').addEventListener('click',()=>waModal.showModal());
   waModal.querySelector('.wa-close').addEventListener('click',()=>waModal.close());
   waModal.addEventListener('click',e=>{if(e.target===waModal)waModal.close()});
