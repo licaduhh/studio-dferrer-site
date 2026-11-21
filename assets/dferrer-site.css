@@ -356,3 +356,17 @@ body.df-wa-lock{overflow:hidden}
 .lash-lifting-dot{width:7px;height:7px;padding:0;border:1px solid white;border-radius:50%;background:rgba(255,255,255,.5);cursor:pointer}
 .lash-lifting-dot.active{background:#32C7BE;border-color:#32C7BE;transform:scale(1.2)}
 @media(prefers-reduced-motion:reduce){.lash-lifting-track{transition:none}}
+
+/* Carrossel de imagens do card Brow Lamination */
+.brow-lamination-carousel{position:relative;height:245px;overflow:hidden;background:#EDF7F4}
+.brow-lamination-viewport{width:100%;height:100%;overflow:hidden;touch-action:pan-y}
+.brow-lamination-track{display:flex;width:100%;height:100%;transition:transform .38s ease}
+.brow-lamination-slide{flex:0 0 100%;width:100%;height:100%}
+.brow-lamination-slide img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.brow-lamination-arrow{position:absolute;top:50%;transform:translateY(-50%);width:30px;height:30px;padding:0;border:1px solid rgba(255,255,255,.8);border-radius:50%;background:rgba(255,255,255,.88);color:#087F79;font:300 24px/1 Arial,sans-serif;box-shadow:0 2px 8px rgba(0,0,0,.12);cursor:pointer}
+.brow-lamination-prev{left:9px}
+.brow-lamination-next{right:9px}
+.brow-lamination-dots{position:absolute;left:0;right:0;bottom:9px;display:flex;justify-content:center;gap:7px}
+.brow-lamination-dot{width:7px;height:7px;padding:0;border:1px solid white;border-radius:50%;background:rgba(255,255,255,.5);cursor:pointer}
+.brow-lamination-dot.active{background:#32C7BE;border-color:#32C7BE;transform:scale(1.2)}
+@media(prefers-reduced-motion:reduce){.brow-lamination-track{transition:none}}
