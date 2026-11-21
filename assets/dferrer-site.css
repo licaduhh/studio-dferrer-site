@@ -342,3 +342,17 @@ body.df-wa-lock{overflow:hidden}
  .dferrer-student-count{right:19px;bottom:6px}
 }
 @media(prefers-reduced-motion:reduce){.dferrer-student-track{transition:none}}
+
+/* Carrossel de imagens do card Lash Lifting */
+.lash-lifting-carousel{position:relative;height:245px;overflow:hidden;background:#EDF7F4}
+.lash-lifting-viewport{width:100%;height:100%;overflow:hidden;touch-action:pan-y}
+.lash-lifting-track{display:flex;width:100%;height:100%;transition:transform .38s ease}
+.lash-lifting-slide{flex:0 0 100%;width:100%;height:100%}
+.lash-lifting-slide img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.lash-lifting-arrow{position:absolute;top:50%;transform:translateY(-50%);width:30px;height:30px;padding:0;border:1px solid rgba(255,255,255,.8);border-radius:50%;background:rgba(255,255,255,.88);color:#087F79;font:300 24px/1 Arial,sans-serif;box-shadow:0 2px 8px rgba(0,0,0,.12);cursor:pointer}
+.lash-lifting-prev{left:9px}
+.lash-lifting-next{right:9px}
+.lash-lifting-dots{position:absolute;left:0;right:0;bottom:9px;display:flex;justify-content:center;gap:7px}
+.lash-lifting-dot{width:7px;height:7px;padding:0;border:1px solid white;border-radius:50%;background:rgba(255,255,255,.5);cursor:pointer}
+.lash-lifting-dot.active{background:#32C7BE;border-color:#32C7BE;transform:scale(1.2)}
+@media(prefers-reduced-motion:reduce){.lash-lifting-track{transition:none}}
