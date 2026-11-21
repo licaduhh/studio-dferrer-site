@@ -95,3 +95,13 @@ footer>* ,.footer>* ,.procedures-footer>*{position:relative;z-index:1}
  .founder-story-copy p{font-size:12px;line-height:1.85}
  .founder-story-note{margin-top:28px;gap:13px;flex-wrap:wrap;font-size:8px}
 }
+
+
+/* Retrato real da fundadora */
+.founder-story-mark.founder-story-portrait{display:block!important;min-height:0!important;height:100%;aspect-ratio:4/5;max-height:560px;border-radius:180px 180px 5px 5px!important;overflow:hidden!important;background:#E6F4F1!important;border:1px solid #B8E6E1!important}
+.founder-story-mark.founder-story-portrait:before,.founder-story-mark.founder-story-portrait:after,.founder-story-mark.founder-story-portrait i{display:none!important}
+.founder-story-mark.founder-story-portrait img{display:block!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center 25%!important}
+@media(max-width:760px){
+ .founder-story-mark.founder-story-portrait{width:100%!important;max-width:390px!important;min-height:0!important;height:auto!important;aspect-ratio:4/5!important;margin:0 auto!important;border-radius:150px 150px 4px 4px!important}
+ .founder-story-mark.founder-story-portrait img{object-position:center 22%!important}
+}
