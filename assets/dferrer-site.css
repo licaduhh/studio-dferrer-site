@@ -471,3 +471,8 @@ body.df-wa-lock{overflow:hidden}
  .dferrer-course-presential .dferrer-course-slide{aspect-ratio:1/1!important}
  .dferrer-course-presential .dferrer-course-content{padding:25px 22px 27px!important}
 }
+
+
+/* Arte enviada para o card do curso on-line */
+.dferrer-online-image{min-height:0!important;padding:0!important;background:transparent!important;border:0!important;overflow:hidden!important}
+.dferrer-online-image img{display:block;width:100%;height:auto;max-height:560px;object-fit:contain;border-radius:10px}
