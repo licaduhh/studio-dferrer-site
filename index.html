@@ -229,6 +229,38 @@ h1,h2,h3,h4,h5,h6,.section-title,.about-text h3,.service-card h3,.body h2,.secti
     @media(max-width:900px){.founder-grid{grid-template-columns:.9fr 1.1fr;gap:30px}.founder-portrait,.founder-portrait img{height:480px;min-height:480px}.founder-highlights{grid-template-columns:repeat(3,1fr)}}
     @media(max-width:700px){.founder-grid{grid-template-columns:1fr;gap:28px;margin-top:36px}.founder-portrait,.founder-portrait img{height:350px;min-height:350px}.founder-copy h3{font-size:34px}.founder-copy p{font-size:14px}.founder-highlights{grid-template-columns:repeat(2,1fr);gap:10px;margin-top:34px}.founder-highlight{min-height:108px;padding:18px 10px}.founder-highlight strong{font-size:31px}.founder-highlight span{font-size:10px}}
 
+  
+/* SISTEMA TIPOGRAFICO DEFINITIVO — somente Bodoni Moda + DM Sans */
+:root{
+  --font-display:'Bodoni Moda',serif;
+  --font-body:'DM Sans',sans-serif;
+}
+html,body,body *{
+  font-family:var(--font-body)!important;
+}
+h1,h2,h3,h4,h5,h6,
+.hero h1,.hero h1 em,
+.section-title,.section-heading,
+.founder-copy h3,.service-card h3,
+.wordmark,.brand,.footer-brand,.signature,
+.founder-highlight strong,.display-title{
+  font-family:var(--font-display)!important;
+  font-style:normal!important;
+  font-weight:400!important;
+  letter-spacing:-.035em;
+}
+h1,h2,.section-title,.hero h1,.display-title{
+  line-height:1.04;
+}
+h3,h4,h5,h6,.service-card h3,.founder-copy h3{
+  line-height:1.12;
+}
+p,li,a,button,input,textarea,select,label,small,
+.eyebrow,.section-kicker,.section-label,.tagline,
+.navlinks,.footer-links,.photo-caption,.founder-copy p{
+  font-family:var(--font-body)!important;
+}
+
   </style>
 </head>
 <body>
