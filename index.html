@@ -99,7 +99,77 @@
 <footer class="footer"><img src="assets/dferrer-beauty-logo-transparente.png" alt="D’Ferrer Beauty"><p>Studio D’Ferrer Beauty · Osasco, São Paulo</p><p><a href="https://www.instagram.com/studiodferrer/" target="_blank" rel="noopener">Instagram</a> · <a href="https://wa.me/5511940507965" target="_blank" rel="noopener">WhatsApp</a></p></footer>
 <script>
 (()=>{const slides=[...document.querySelectorAll('.home-slide')],dots=[...document.querySelectorAll('.carousel-dot')];if(!slides.length)return;let current=0,timer;const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;function show(i){current=(i+slides.length)%slides.length;slides.forEach((s,n)=>s.classList.toggle('active',n===current));dots.forEach((d,n)=>d.classList.toggle('active',n===current))}function start(){clearInterval(timer);if(!reduced)timer=setInterval(()=>show(current+1),4500)}document.querySelector('.carousel-prev').addEventListener('click',()=>{show(current-1);start()});document.querySelector('.carousel-next').addEventListener('click',()=>{show(current+1);start()});dots.forEach((d,n)=>d.addEventListener('click',()=>{show(n);start()}));start()})();
-</script><!-- WhatsApp flutuante D’Ferrer: formulário que prepara a mensagem antes de abrir o WhatsApp -->
+</script>
+<!-- Depoimentos reais das clientes do Studio D’Ferrer -->
+<section class="dferrer-testimonials" aria-labelledby="dferrer-testimonials-title">
+ <div class="dferrer-testimonials-inner">
+  <div class="dferrer-testimonials-heading">
+   <span class="eyebrow">Carinho que recebemos de volta</span>
+   <h2 id="dferrer-testimonials-title">O que nossas clientes <em>falam!</em></h2>
+   <p>Cada mensagem representa uma história, uma experiência e a confiança que nos inspira todos os dias.</p>
+  </div>
+  <div class="dferrer-review-slider" aria-roledescription="carrossel" aria-label="Depoimentos de clientes">
+   <button class="dferrer-review-arrow dferrer-review-prev" type="button" aria-label="Depoimento anterior">‹</button>
+   <div class="dferrer-review-window">
+    <div class="dferrer-review-track">
+     <article class="dferrer-review-card" aria-label="Depoimento de Cristiane Soares Barreto">
+      <div class="dferrer-review-top"><span class="dferrer-review-avatar">C</span><div><h3>Cristiane Soares Barreto</h3><span>Cliente D’Ferrer</span></div></div>
+      <div class="dferrer-review-stars" aria-label="5 estrelas">★★★★★</div>
+      <blockquote>“O Studio D’ Ferrer é simplesmente excepcional. Tenho apenas elogios a fazer. A equipe é composta por profissionais extremamente competentes e atenciosas, sempre prontas para oferecer um atendimento de alta qualidade. Além da simpatia e do profissionalismo das colaboradoras, o trabalho realizado é impecável em todos os detalhes. A estrutura do espaço é acolhedora, bem planejada e proporciona uma experiência muito agradável. Sem dúvida, é um lugar único, e não o trocaria por nenhum outro.”</blockquote>
+     </article>
+     <article class="dferrer-review-card" aria-label="Depoimento de Ana Kátia Silva">
+      <div class="dferrer-review-top"><span class="dferrer-review-avatar">A</span><div><h3>Ana Kátia Silva</h3><span>Cliente D’Ferrer</span></div></div>
+      <div class="dferrer-review-stars" aria-label="5 estrelas">★★★★★</div>
+      <blockquote>“É uma ótima clínica, além de linda muito acolhedora, eu gostei muito do procedimento que eu fiz, tudo muito organizado e limpo... Parabéns para todos que trabalham lá. Eu recomendo.”</blockquote>
+     </article>
+     <article class="dferrer-review-card" aria-label="Depoimento de Ale Costa">
+      <div class="dferrer-review-top"><span class="dferrer-review-avatar">A</span><div><h3>Ale Costa</h3><span>Cliente D’Ferrer</span></div></div>
+      <div class="dferrer-review-stars" aria-label="5 estrelas">★★★★★</div>
+      <blockquote>“Olá, bom dia Angélica! Seu espaço é maravilhoso, lindo e aconchegante. O atendimento é ímpar, as meninas sempre atenciosas e carinhosas nos atendimentos. Meus cílios agradecem a cada vez que saio feliz!!”</blockquote>
+     </article>
+     <article class="dferrer-review-card" aria-label="Depoimento de Nicole Martins Silva">
+      <div class="dferrer-review-top"><span class="dferrer-review-avatar">N</span><div><h3>Nicole Martins Silva</h3><span>Cliente D’Ferrer</span></div></div>
+      <div class="dferrer-review-stars" aria-label="5 estrelas">★★★★★</div>
+      <blockquote>“Os cílios ficaram muito lindos, bem naturais do jeito que eu gosto. Fui bem atendida, com certeza voltarei mais vezes.”</blockquote>
+     </article>
+     <article class="dferrer-review-card" aria-label="Depoimento de Jéssica Silva e Silva">
+      <div class="dferrer-review-top"><span class="dferrer-review-avatar">J</span><div><h3>Jéssica Silva e Silva</h3><span>Aluna D’Ferrer</span></div></div>
+      <div class="dferrer-review-stars" aria-label="5 estrelas">★★★★★</div>
+      <blockquote>“Eu ameeeei tantooo! Você me deixou super confortável e segura. Você é ótima. Obrigada por passar suas experiências e também me sentir sendo acolhida e dando todo suporte que o curso oferece. Obrigada, recomendo, é uma grande profissional.”</blockquote>
+     </article>
+     <article class="dferrer-review-card" aria-label="Depoimento de Camila Jamarino">
+      <div class="dferrer-review-top"><span class="dferrer-review-avatar">C</span><div><h3>Camila Jamarino</h3><span>Cliente D’Ferrer</span></div></div>
+      <div class="dferrer-review-stars" aria-label="5 estrelas">★★★★★</div>
+      <blockquote>“O Studio D’Ferrer é um lugar encantador. As meninas são uns amores, te deixam à vontade. Adoro fazer com elas, super indico.”</blockquote>
+     </article>
+     <article class="dferrer-review-card" aria-label="Depoimento de Marcia Ferreira">
+      <div class="dferrer-review-top"><span class="dferrer-review-avatar">M</span><div><h3>Marcia Ferreira</h3><span>Cliente há mais de 2 anos</span></div></div>
+      <div class="dferrer-review-stars" aria-label="5 estrelas">★★★★★</div>
+      <blockquote>“Já sou cliente há mais de 2 anos. Espaço perfeito!! Profissionais qualificados, meus cílios sempre saem perfeitos e duram mais de 30 dias! Recomendo de olhos fechados. Façam a técnica que dura mais de 30 dias, vocês não vão se arrepender.”</blockquote>
+     </article>
+     <article class="dferrer-review-card" aria-label="Depoimento de Camila de Col Aramaki">
+      <div class="dferrer-review-top"><span class="dferrer-review-avatar">C</span><div><h3>Camila de Col Aramaki</h3><span>Cliente D’Ferrer</span></div></div>
+      <div class="dferrer-review-stars" aria-label="5 estrelas">★★★★★</div>
+      <blockquote>“Além de sempre aumentar a autoestima com esses cílios maravilhosos, o atendimento é muito bom (sempre). A atenção dada durante o procedimento, o cuidado e etc. Os cílios são perfeitos e ainda são à prova d’água, não precisamos esperar para secar, além de serem cheinhos. Recomendo super.”</blockquote>
+     </article>
+     <article class="dferrer-review-card" aria-label="Depoimento de Aline Costa">
+      <div class="dferrer-review-top"><span class="dferrer-review-avatar">A</span><div><h3>Aline Costa</h3><span>Cliente e aluna D’Ferrer</span></div></div>
+      <div class="dferrer-review-stars" aria-label="5 estrelas">★★★★★</div>
+      <blockquote>“Já era cliente de um tempo ali do Studio, agora resolvi fazer o curso de cílios e foi com certeza uma das melhores coisas que eu fiz. A Angélica é maravilhosa.”</blockquote>
+     </article>
+    </div>
+   </div>
+   <button class="dferrer-review-arrow dferrer-review-next" type="button" aria-label="Próximo depoimento">›</button>
+  </div>
+  <div class="dferrer-review-dots" role="group" aria-label="Escolher depoimento"></div>
+  <p class="dferrer-review-footnote">Depoimentos compartilhados por nossas clientes.</p>
+ </div>
+</section>
+<script>
+(()=>{const root=document.querySelector('.dferrer-testimonials');if(!root||root.dataset.ready)return;root.dataset.ready='1';const track=root.querySelector('.dferrer-review-track'),cards=[...track.children],dots=root.querySelector('.dferrer-review-dots');let active=0;cards.forEach((_,i)=>{const b=document.createElement('button');b.type='button';b.className='dferrer-review-dot';b.setAttribute('aria-label','Ver depoimento '+(i+1));b.addEventListener('click',()=>go(i));dots.appendChild(b)});const dotButtons=[...dots.children];function go(i){active=(i+cards.length)%cards.length;track.style.transform='translateX(-'+(active*100)+'%)';dotButtons.forEach((d,n)=>{d.classList.toggle('active',n===active);d.setAttribute('aria-current',n===active?'true':'false')});cards.forEach((c,n)=>c.setAttribute('aria-hidden',n===active?'false':'true'))}root.querySelector('.dferrer-review-prev').addEventListener('click',()=>go(active-1));root.querySelector('.dferrer-review-next').addEventListener('click',()=>go(active+1));let startX=0;const win=root.querySelector('.dferrer-review-window');win.addEventListener('touchstart',e=>{startX=e.changedTouches[0].clientX},{passive:true});win.addEventListener('touchend',e=>{const delta=e.changedTouches[0].clientX-startX;if(Math.abs(delta)>45)go(active+(delta<0?1:-1))},{passive:true});go(0)})();
+</script>
+
+<!-- WhatsApp flutuante D’Ferrer: formulário que prepara a mensagem antes de abrir o WhatsApp -->
 <div class="df-wa-widget">
  <button class="df-wa-float" type="button" aria-label="Agendar pelo WhatsApp" aria-haspopup="dialog" aria-controls="df-wa-dialog">
   <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.02 3.2A12.55 12.55 0 0 0 5.2 22.1L3.5 28.3l6.35-1.66A12.7 12.7 0 1 0 16.02 3.2Zm0 22.95a10.3 10.3 0 0 1-5.25-1.44l-.38-.22-3.77.99 1.01-3.67-.25-.4a10.24 10.24 0 1 1 8.64 4.74Zm5.63-7.68c-.31-.16-1.83-.9-2.11-1-.28-.1-.49-.16-.7.16-.21.31-.8 1-.98 1.2-.18.21-.36.23-.67.08-.31-.16-1.3-.48-2.48-1.52-.92-.82-1.54-1.83-1.72-2.14-.18-.31-.02-.48.14-.64.14-.14.31-.36.47-.54.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.7-1.69-.96-2.31-.25-.6-.51-.52-.7-.53h-.6c-.21 0-.55.08-.83.39-.28.31-1.09 1.06-1.09 2.59s1.12 3.01 1.27 3.22c.16.21 2.2 3.36 5.33 4.71.75.32 1.33.52 1.79.66.75.24 1.43.2 1.97.12.6-.09 1.83-.75 2.09-1.48.26-.73.26-1.35.18-1.48-.08-.13-.28-.21-.6-.36Z"/></svg>
