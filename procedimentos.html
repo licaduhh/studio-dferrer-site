@@ -227,7 +227,22 @@ header{background:rgba(255,249,246,.96)!important;border-color:#B8E6E1!important
   .photo{height:310px;padding:8px}
 }
 
-\n/* Brow Lamination: carrossel com fotos inteiras e centralizadas */\n.brow-carousel{height:340px;position:relative;overflow:hidden;border-radius:20px;background:#F7FCFB;padding:10px;display:flex;align-items:center;justify-content:center}.brow-track{width:100%;height:100%;position:relative;display:flex;align-items:center;justify-content:center}.brow-slide{position:absolute;inset:10px;width:calc(100% - 20px);height:calc(100% - 20px);object-fit:contain!important;object-position:center!important;border-radius:14px;opacity:0;visibility:hidden;transition:opacity .35s ease}.brow-slide.is-active{opacity:1;visibility:visible}.brow-prev,.brow-next{position:absolute;top:50%;transform:translateY(-50%);width:34px;height:34px;border:0;border-radius:50%;background:#ffffffdf;color:#075F5B;font-size:25px;line-height:1;cursor:pointer;z-index:2}.brow-prev{left:14px}.brow-next{right:14px}.brow-dots{position:absolute;bottom:14px;left:0;right:0;display:flex;justify-content:center;gap:7px;z-index:2}.brow-dots button{width:7px;height:7px;border:0;border-radius:50%;padding:0;background:#ffffffa8;cursor:pointer}.brow-dots button.is-active{background:#075F5B;transform:scale(1.25)}.card:has(.brow-carousel){padding:14px}.card:has(.brow-carousel) .brow-carousel{height:360px}\n@media(max-width:680px){.card:has(.brow-carousel) .brow-carousel{height:330px}}\n</style>
+\n/* Imagens ocupam 100% da área visual dos cards, sem faixas vazias */
+.photo{padding:0!important;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover!important;object-position:center!important;border-radius:20px}
+.brow-carousel{height:340px;position:relative;overflow:hidden;border-radius:20px;background:#F7FCFB;padding:0;display:flex;align-items:stretch;justify-content:stretch}
+.brow-track{width:100%;height:100%;position:relative;display:block}
+.brow-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover!important;object-position:center!important;border-radius:20px;opacity:0;visibility:hidden;transition:opacity .35s ease}
+.brow-slide.is-active{opacity:1;visibility:visible}
+.brow-prev,.brow-next{position:absolute;top:50%;transform:translateY(-50%);width:34px;height:34px;border:0;border-radius:50%;background:#ffffffdf;color:#075F5B;font-size:25px;line-height:1;cursor:pointer;z-index:2}
+.brow-prev{left:14px}.brow-next{right:14px}
+.brow-dots{position:absolute;bottom:14px;left:0;right:0;display:flex;justify-content:center;gap:7px;z-index:2}
+.brow-dots button{width:7px;height:7px;border:0;border-radius:50%;padding:0;background:#ffffffa8;cursor:pointer}
+.brow-dots button.is-active{background:#075F5B;transform:scale(1.25)}
+.card:has(.brow-carousel){padding:14px}
+.card:has(.brow-carousel) .brow-carousel{height:360px}
+@media(max-width:680px){.card:has(.brow-carousel) .brow-carousel{height:330px}}
+</style>
 </head>
 <body>
 <header><div class="wrap nav"><a class="wordmark" href="index.html"><img src="./assets/logo-dferrer-beauty.svg" alt="D’Ferrer Beauty"></a><a class="back" href="index.html">← Voltar ao site</a></div></header>
