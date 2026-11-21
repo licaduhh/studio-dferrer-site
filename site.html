@@ -233,6 +233,44 @@
 <script>
 (()=>{const root=document.querySelector('.dferrer-testimonials');if(!root||root.dataset.ready)return;root.dataset.ready='1';const track=root.querySelector('.dferrer-review-track'),cards=[...track.children],dots=root.querySelector('.dferrer-review-dots');let active=0;cards.forEach((_,i)=>{const b=document.createElement('button');b.type='button';b.className='dferrer-review-dot';b.setAttribute('aria-label','Ver depoimento '+(i+1));b.addEventListener('click',()=>go(i));dots.appendChild(b)});const dotButtons=[...dots.children];function go(i){active=(i+cards.length)%cards.length;track.style.transform='translateX(-'+(active*100)+'%)';dotButtons.forEach((d,n)=>{d.classList.toggle('active',n===active);d.setAttribute('aria-current',n===active?'true':'false')});cards.forEach((c,n)=>c.setAttribute('aria-hidden',n===active?'false':'true'))}root.querySelector('.dferrer-review-prev').addEventListener('click',()=>go(active-1));root.querySelector('.dferrer-review-next').addEventListener('click',()=>go(active+1));let startX=0;const win=root.querySelector('.dferrer-review-window');win.addEventListener('touchstart',e=>{startX=e.changedTouches[0].clientX},{passive:true});win.addEventListener('touchend',e=>{const delta=e.changedTouches[0].clientX-startX;if(Math.abs(delta)>45)go(active+(delta<0?1:-1))},{passive:true});go(0)})();
 </script>
+<section class="dferrer-location" id="dferrer-location" aria-labelledby="dferrer-location-title">
+ <div class="dferrer-location-inner">
+  <div class="dferrer-location-heading">
+   <span class="dferrer-location-kicker">NOSSA LOCALIZAÇÃO</span>
+   <h2 id="dferrer-location-title">Onde nos encontrar</h2>
+  </div>
+  <div class="dferrer-location-address">
+   <span class="dferrer-location-icon" aria-hidden="true">⌖</span>
+   <div><strong>ENDEREÇO</strong><p>Av. Analice Sakatauskas, 310, sala 08, Bela Vista, Osasco - SP</p></div>
+  </div>
+  <div class="dferrer-location-actions">
+   <a class="dferrer-location-button dferrer-location-book" href="https://appfidelizze.com/dferrer" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">▣</span> AGENDAR AGORA</a>
+   <a class="dferrer-location-button dferrer-location-maps" href="https://www.google.com/maps/search/?api=1&query=Av.%20Analice%20Sakatauskas%2C%20310%2C%20sala%2008%2C%20Bela%20Vista%2C%20Osasco%20-%20SP" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">⌖</span> GOOGLE MAPS</a>
+   <a class="dferrer-location-button dferrer-location-waze" href="https://waze.com/ul?q=Av.%20Analice%20Sakatauskas%2C%20310%2C%20sala%2008%2C%20Bela%20Vista%2C%20Osasco%20-%20SP&navigate=yes" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">➤</span> WAZE</a>
+  </div>
+  <div class="dferrer-location-map"><iframe title="Mapa de localização do Studio D’Ferrer Beauty" src="https://www.google.com/maps?q=Av.%20Analice%20Sakatauskas%2C%20310%2C%20sala%2008%2C%20Bela%20Vista%2C%20Osasco%20-%20SP&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+ </div>
+</section>
+<style id="dferrer-location-styles">
+.dferrer-location{padding:76px 20px 84px;background:#FFF9F6;color:#244B49}
+.dferrer-location-inner{max-width:760px;margin:0 auto;padding:38px 30px 30px;border:1px solid #E8DED4;border-radius:28px;background:#FFFCFA;box-shadow:0 8px 28px rgba(36,75,73,.06)}
+.dferrer-location-heading{text-align:center;margin-bottom:42px}
+.dferrer-location-kicker{display:block;color:#087F79;font:500 12px 'DM Sans',Arial,sans-serif;letter-spacing:.28em;margin-bottom:18px}
+.dferrer-location-heading h2{margin:0;color:#075F5B;font:400 clamp(32px,5vw,46px) 'Bodoni Moda',Georgia,serif;letter-spacing:-.035em}
+.dferrer-location-address{display:flex;align-items:flex-start;gap:18px;margin:0 0 34px;padding:0 8px}
+.dferrer-location-icon{flex:0 0 62px;width:62px;height:62px;display:grid;place-items:center;border-radius:50%;background:#EAF5F1;color:#087F79;font-size:30px}
+.dferrer-location-address strong{display:block;margin:4px 0 8px;color:#244B49;font:600 15px 'DM Sans',Arial,sans-serif;letter-spacing:.06em}
+.dferrer-location-address p{margin:0;color:#71817C;font:400 18px/1.55 'DM Sans',Arial,sans-serif}
+.dferrer-location-actions{display:grid;gap:14px;margin:0 8px 42px}
+.dferrer-location-button{min-height:66px;display:flex;align-items:center;justify-content:center;gap:12px;padding:14px 18px;border-radius:999px;text-decoration:none;font:600 15px 'DM Sans',Arial,sans-serif;letter-spacing:.16em;transition:transform .2s,filter .2s}
+.dferrer-location-button:hover{transform:translateY(-2px);filter:brightness(.97)}
+.dferrer-location-book{background:#32C7BE;color:#fff;box-shadow:0 8px 20px rgba(50,199,190,.2)}
+.dferrer-location-maps{background:#244B49;color:#fff}
+.dferrer-location-waze{background:#36BDF4;color:#fff}
+.dferrer-location-map{height:390px;overflow:hidden;border:7px solid #fff;border-radius:24px;background:#EAF5F1;box-shadow:0 4px 18px rgba(36,75,73,.08)}
+.dferrer-location-map iframe{display:block;width:100%;height:100%;border:0}
+@media(max-width:600px){.dferrer-location{padding:48px 14px 58px}.dferrer-location-inner{padding:30px 18px 18px;border-radius:24px}.dferrer-location-heading{margin-bottom:32px}.dferrer-location-address{gap:14px;padding:0 2px}.dferrer-location-icon{flex-basis:52px;width:52px;height:52px;font-size:26px}.dferrer-location-address p{font-size:16px}.dferrer-location-actions{margin:0 0 30px;gap:12px}.dferrer-location-button{min-height:60px;font-size:13px}.dferrer-location-map{height:330px;border-width:5px;border-radius:20px}}
+</style>
 <footer class="footer"><img src="assets/dferrer-beauty-logo-transparente.png" alt="D’Ferrer Beauty"><p>Studio D’Ferrer Beauty · Osasco, São Paulo</p><p><a href="https://www.instagram.com/studiodferrer/" target="_blank" rel="noopener">Instagram</a> · <a href="https://wa.me/5511940507965" target="_blank" rel="noopener">WhatsApp</a></p></footer>
 <script>
 (()=>{const slides=[...document.querySelectorAll('.home-slide')],dots=[...document.querySelectorAll('.carousel-dot')];if(!slides.length)return;let current=0,timer;const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;function show(i){current=(i+slides.length)%slides.length;slides.forEach((s,n)=>s.classList.toggle('active',n===current));dots.forEach((d,n)=>d.classList.toggle('active',n===current))}function start(){clearInterval(timer);if(!reduced)timer=setInterval(()=>show(current+1),4500)}document.querySelector('.carousel-prev').addEventListener('click',()=>{show(current-1);start()});document.querySelector('.carousel-next').addEventListener('click',()=>{show(current+1);start()});dots.forEach((d,n)=>d.addEventListener('click',()=>{show(n);start()}));start()})();
