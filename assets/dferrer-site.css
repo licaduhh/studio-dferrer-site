@@ -215,7 +215,7 @@ footer>* ,.footer>* ,.procedures-footer>*{position:relative;z-index:1}
 .df-wa-backdrop{position:fixed;inset:0;z-index:9999;background:rgba(34,43,41,.58);display:none;align-items:center;justify-content:center;padding:18px;overflow-y:auto}
 .df-wa-backdrop.is-open{display:flex}
 .df-wa-panel{width:min(100%,620px);max-height:calc(100dvh - 36px);overflow:auto;background:#FFF;border-radius:22px;box-shadow:0 22px 80px rgba(0,0,0,.22);color:#4C5E59}
-.df-wa-header{position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 24px;background:#087F79;color:#fff}
+.df-wa-header{position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 24px;background:#25D366;color:#fff}
 .df-wa-header h2{margin:0;font:400 28px/1.15 "Boston Angel",Georgia,serif;color:#fff}
 .df-wa-header p{margin:4px 0 0;font:400 12px/1.4 "DM Sans",Arial,sans-serif;color:rgba(255,255,255,.9)}
 .df-wa-close{width:40px;height:40px;flex:0 0 40px;border:0;background:transparent;color:#fff;font:300 34px/1 "DM Sans",Arial,sans-serif;cursor:pointer}
