@@ -180,3 +180,28 @@ footer>* ,.footer>* ,.procedures-footer>*{position:relative;z-index:1}
  .dferrer-course-content{padding:19px 19px 22px}
  .dferrer-course-content h3{font-size:28px}
 }
+
+
+/* Destaque editorial para o universo educacional */
+.dferrer-courses-heading .eyebrow{display:block;font-size:10px;letter-spacing:.19em;text-transform:uppercase}
+.dferrer-courses-heading h2 em{font-style:italic;color:#087F79}
+.dferrer-course-grid{grid-template-columns:minmax(0,1fr);justify-items:center;gap:22px}
+.dferrer-course-presential{width:100%;max-width:880px;background:#E8F5F2;border-color:#C8E7E1;border-radius:18px;box-shadow:0 12px 32px rgba(7,95,91,.055)}
+.dferrer-course-presential .dferrer-course-gallery{padding:17px 17px 0}
+.dferrer-course-presential .dferrer-course-gallery-placeholder{min-height:320px;border:0;border-radius:10px;background:linear-gradient(135deg,#D8EFEB 0%,#F8F7F2 55%,#FBEAF0 100%)}
+.dferrer-course-presential .dferrer-course-gallery-placeholder strong{font-size:clamp(27px,4vw,38px)}
+.dferrer-course-presential .dferrer-course-content{padding:26px 30px 30px}
+.dferrer-course-presential .dferrer-course-content h3{font-size:clamp(31px,4vw,40px)}
+.dferrer-course-presential .dferrer-course-content .dferrer-presential-highlight{margin:2px 0 12px;color:#087F79;font:italic 400 clamp(22px,3vw,30px)/1.22 "Boston Angel",Georgia,serif}
+.dferrer-course-presential .dferrer-course-content>p:not(.dferrer-presential-highlight){max-width:650px;font-size:14px;line-height:1.85}
+.dferrer-course-presential .dferrer-course-button{min-height:44px;padding:0 22px}
+.dferrer-course-online{width:100%;max-width:560px}
+@media(max-width:700px){
+ .dferrer-courses-heading h2{font-size:35px;line-height:1.12}
+ .dferrer-course-presential .dferrer-course-gallery{padding:12px 12px 0}
+ .dferrer-course-presential .dferrer-course-gallery-placeholder{min-height:230px}
+ .dferrer-course-presential .dferrer-course-content{padding:21px 20px 23px}
+ .dferrer-course-presential .dferrer-course-content .dferrer-presential-highlight{font-size:25px}
+ .dferrer-course-presential .dferrer-course-content>p:not(.dferrer-presential-highlight){font-size:13px}
+ .dferrer-course-presential .dferrer-course-button{width:100%;padding:0 12px}
+}
