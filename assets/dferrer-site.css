@@ -282,3 +282,43 @@ body.df-wa-lock{overflow:hidden}
  .dferrer-review-dots{gap:8px;margin-top:19px}
 }
 @media(prefers-reduced-motion:reduce){.dferrer-review-track,.dferrer-review-arrow,.dferrer-review-dot{transition:none}}
+
+/* Depoimentos: cards mais largos, baixos e delicados */
+.dferrer-testimonials{padding:58px 16px 62px}
+.dferrer-testimonials-inner{width:min(100%,1040px);padding:34px 34px 28px;border-radius:26px}
+.dferrer-testimonials-heading{margin-bottom:22px}
+.dferrer-testimonials-heading h2{font-size:clamp(32px,4.2vw,44px);line-height:1.08}
+.dferrer-testimonials-heading p{font-size:12px;line-height:1.65}
+.dferrer-review-slider{display:block;padding:0}
+.dferrer-review-window{width:100%;border-radius:20px}
+.dferrer-review-card{min-height:0;padding:24px 34px 26px;border-radius:20px}
+.dferrer-review-top{gap:12px;margin-bottom:10px}
+.dferrer-review-avatar{width:46px;height:46px;flex-basis:46px;font-size:22px}
+.dferrer-review-top h3{font-size:19px}
+.dferrer-review-stars{margin-bottom:9px;font-size:17px;letter-spacing:2px}
+.dferrer-review-card blockquote{font-size:15px;line-height:1.55}
+.dferrer-review-arrow{position:absolute;z-index:2;top:50%;transform:translateY(-50%);width:30px;height:34px;flex-basis:30px;background:rgba(255,255,255,.92);box-shadow:0 2px 8px rgba(30,80,70,.08);font-size:25px}
+.dferrer-review-prev{left:-13px}
+.dferrer-review-next{right:-13px}
+.dferrer-review-dots{margin-top:16px;gap:8px}
+.dferrer-review-dot{width:7px;height:7px}
+@media(max-width:700px){
+ .dferrer-testimonials{padding:34px 10px 38px}
+ .dferrer-testimonials-inner{width:100%;padding:23px 12px 21px;border-radius:20px}
+ .dferrer-testimonials-heading{margin-bottom:17px}
+ .dferrer-testimonials-heading h2{font-size:30px;line-height:1.08}
+ .dferrer-testimonials-heading p{font-size:11px;line-height:1.55}
+ .dferrer-review-slider{gap:0}
+ .dferrer-review-window{border-radius:16px}
+ .dferrer-review-card{min-height:0;padding:19px 23px 20px;border-radius:16px}
+ .dferrer-review-top{gap:9px;margin-bottom:8px}
+ .dferrer-review-avatar{width:39px;height:39px;flex-basis:39px;font-size:20px}
+ .dferrer-review-top h3{font-size:16px}
+ .dferrer-review-top div>span{font-size:9px}
+ .dferrer-review-stars{font-size:15px;margin-bottom:7px;letter-spacing:1.5px}
+ .dferrer-review-card blockquote{font-size:14px;line-height:1.48}
+ .dferrer-review-arrow{width:23px;height:28px;flex-basis:23px;font-size:22px}
+ .dferrer-review-prev{left:-7px}
+ .dferrer-review-next{right:-7px}
+ .dferrer-review-dots{margin-top:13px}
+}
