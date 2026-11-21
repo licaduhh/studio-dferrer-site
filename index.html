@@ -99,4 +99,39 @@
 <footer class="footer"><img src="assets/dferrer-beauty-logo-transparente.png" alt="D’Ferrer Beauty"><p>Studio D’Ferrer Beauty · Osasco, São Paulo</p><p><a href="https://www.instagram.com/studiodferrer/" target="_blank" rel="noopener">Instagram</a> · <a href="https://wa.me/5511940507965" target="_blank" rel="noopener">WhatsApp</a></p></footer>
 <script>
 (()=>{const slides=[...document.querySelectorAll('.home-slide')],dots=[...document.querySelectorAll('.carousel-dot')];if(!slides.length)return;let current=0,timer;const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;function show(i){current=(i+slides.length)%slides.length;slides.forEach((s,n)=>s.classList.toggle('active',n===current));dots.forEach((d,n)=>d.classList.toggle('active',n===current))}function start(){clearInterval(timer);if(!reduced)timer=setInterval(()=>show(current+1),4500)}document.querySelector('.carousel-prev').addEventListener('click',()=>{show(current-1);start()});document.querySelector('.carousel-next').addEventListener('click',()=>{show(current+1);start()});dots.forEach((d,n)=>d.addEventListener('click',()=>{show(n);start()}));start()})();
+</script><!-- WhatsApp flutuante D’Ferrer: formulário que prepara a mensagem antes de abrir o WhatsApp -->
+<div class="df-wa-widget">
+ <button class="df-wa-float" type="button" aria-label="Agendar pelo WhatsApp" aria-haspopup="dialog" aria-controls="df-wa-dialog">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.02 3.2A12.55 12.55 0 0 0 5.2 22.1L3.5 28.3l6.35-1.66A12.7 12.7 0 1 0 16.02 3.2Zm0 22.95a10.3 10.3 0 0 1-5.25-1.44l-.38-.22-3.77.99 1.01-3.67-.25-.4a10.24 10.24 0 1 1 8.64 4.74Zm5.63-7.68c-.31-.16-1.83-.9-2.11-1-.28-.1-.49-.16-.7.16-.21.31-.8 1-.98 1.2-.18.21-.36.23-.67.08-.31-.16-1.3-.48-2.48-1.52-.92-.82-1.54-1.83-1.72-2.14-.18-.31-.02-.48.14-.64.14-.14.31-.36.47-.54.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.7-1.69-.96-2.31-.25-.6-.51-.52-.7-.53h-.6c-.21 0-.55.08-.83.39-.28.31-1.09 1.06-1.09 2.59s1.12 3.01 1.27 3.22c.16.21 2.2 3.36 5.33 4.71.75.32 1.33.52 1.79.66.75.24 1.43.2 1.97.12.6-.09 1.83-.75 2.09-1.48.26-.73.26-1.35.18-1.48-.08-.13-.28-.21-.6-.36Z"/></svg>
+ </button>
+ <div class="df-wa-backdrop" id="df-wa-dialog" role="dialog" aria-modal="true" aria-labelledby="df-wa-title" aria-hidden="true">
+  <section class="df-wa-panel">
+   <header class="df-wa-header">
+    <div><h2 id="df-wa-title">Agendar no WhatsApp</h2><p>Studio D’Ferrer Beauty · Osasco</p></div>
+    <button class="df-wa-close" type="button" aria-label="Fechar formulário">×</button>
+   </header>
+   <form class="df-wa-form">
+    <p class="df-wa-intro">Preencha seus dados e sua mensagem será preparada para o nosso WhatsApp.</p>
+    <label>Nome <span>*</span><input name="nome" type="text" placeholder="Seu nome" autocomplete="name" required></label>
+    <label>Telefone / WhatsApp<input name="telefone" type="tel" placeholder="(11) 90000-0000" autocomplete="tel"></label>
+    <label>E-mail<input name="email" type="email" placeholder="seuemail@exemplo.com" autocomplete="email"></label>
+    <label>Serviço desejado <span>*</span>
+     <select name="servico" required>
+      <option value="">Selecione...</option>
+      <optgroup label="Extensão de cílios"><option>Cílios leves</option><option>Volume médio</option><option>Cílios +30 dias</option></optgroup>
+      <option>Lash Lifting</option><option>Design de sobrancelhas</option><option>Brow Lamination</option><option>Hydra Gloss</option><option>Quero uma orientação</option>
+     </select>
+    </label>
+    <label>Melhor dia e horário<input name="horario" type="text" placeholder="Ex.: sábado de manhã"></label>
+    <label>Observação<textarea name="observacao" rows="3" placeholder="Algo que queira contar antes?"></textarea></label>
+    <button class="df-wa-submit" type="submit">
+     <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.02 3.2A12.55 12.55 0 0 0 5.2 22.1L3.5 28.3l6.35-1.66A12.7 12.7 0 1 0 16.02 3.2Zm0 22.95a10.3 10.3 0 0 1-5.25-1.44l-.38-.22-3.77.99 1.01-3.67-.25-.4a10.24 10.24 0 1 1 8.64 4.74Zm5.63-7.68c-.31-.16-1.83-.9-2.11-1-.28-.1-.49-.16-.7.16-.21.31-.8 1-.98 1.2-.18.21-.36.23-.67.08-.31-.16-1.3-.48-2.48-1.52-.92-.82-1.54-1.83-1.72-2.14-.18-.31-.02-.48.14-.64.14-.14.31-.36.47-.54.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.7-1.69-.96-2.31-.25-.6-.51-.52-.7-.53h-.6c-.21 0-.55.08-.83.39-.28.31-1.09 1.06-1.09 2.59s1.12 3.01 1.27 3.22c.16.21 2.2 3.36 5.33 4.71.75.32 1.33.52 1.79.66.75.24 1.43.2 1.97.12.6-.09 1.83-.75 2.09-1.48.26-.73.26-1.35.18-1.48-.08-.13-.28-.21-.6-.36Z"/></svg>
+     Enviar no WhatsApp
+    </button>
+   </form>
+  </section>
+ </div>
+</div>
+<script>
+(()=>{const root=document.querySelector('.df-wa-widget');if(!root||root.dataset.ready)return;root.dataset.ready='1';const open=root.querySelector('.df-wa-float'),backdrop=root.querySelector('.df-wa-backdrop'),close=root.querySelector('.df-wa-close'),form=root.querySelector('.df-wa-form'),first=form.querySelector('[name="nome"]');function show(){backdrop.classList.add('is-open');backdrop.setAttribute('aria-hidden','false');document.body.classList.add('df-wa-lock');setTimeout(()=>first.focus(),50)}function hide(){backdrop.classList.remove('is-open');backdrop.setAttribute('aria-hidden','true');document.body.classList.remove('df-wa-lock');open.focus()}open.addEventListener('click',show);close.addEventListener('click',hide);backdrop.addEventListener('click',e=>{if(e.target===backdrop)hide()});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&backdrop.classList.contains('is-open'))hide()});form.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;const d=new FormData(form);const lines=['Olá! Gostaria de agendar um horário no Studio D’Ferrer Beauty.','', 'Nome: '+d.get('nome'),'Telefone/WhatsApp: '+(d.get('telefone')||'Não informado'),'E-mail: '+(d.get('email')||'Não informado'),'Serviço desejado: '+d.get('servico'),'Melhor dia e horário: '+(d.get('horario')||'A combinar'),'Observação: '+(d.get('observacao')||'Nenhuma')];const url='https://wa.me/5511940507965?text='+encodeURIComponent(lines.join('\n'));window.open(url,'_blank','noopener,noreferrer')})})();
 </script></body></html>
